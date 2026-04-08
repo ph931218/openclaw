@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "deviceId": "<自动生成，无需手动配置>",
+  "publicKeyPem": "-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----\n",
+  "privateKeyPem": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n",
+  "createdAtMs": 0
+}

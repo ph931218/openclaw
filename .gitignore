@@ -1,0 +1,24 @@
+# 绝对不能提交的真实凭据
+*.key
+*.pem
+*.env.local
+
+# 微信账号数据（含 token/cookie）
+openclaw-weixin/accounts/
+
+# OpenClaw 运行时文件
+sessions/
+logs/
+tasks/
+cron/
+delivery-queue/
+
+# macOS
+.DS_Store
+
+# 编辑器
+*.swp
+*.swo
+*~
+.idea/
+.vscode/

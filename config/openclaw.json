@@ -1,0 +1,454 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.4.5",
+    "lastTouchedAt": "2026-04-08T03:31:24.359Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-02T04:20:08.812Z",
+    "lastRunVersion": "2026.3.12",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "oneapi": {
+        "baseUrl": "https://oneapi-comate.baidu-int.com/v1",
+        "apiKey": "sk-bSxAS*******************************************",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "GLM-5-Turbo",
+            "name": "GLM-5-Turbo",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "GLM-5",
+            "name": "GLM-5",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "Claude Haiku 4.5",
+            "name": "Claude Haiku 4.5",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "Claude Sonnet 4.5",
+            "name": "Claude Sonnet 4.5",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "Claude Sonnet 4.6",
+            "name": "Claude Sonnet 4.6",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "Claude Opus 4.5",
+            "name": "Claude Opus 4.5",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "Claude Opus 4.6",
+            "name": "Claude Opus 4.6",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "Kimi-K2.5",
+            "name": "Kimi-K2.5",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "MiniMax-M2.1",
+            "name": "MiniMax-M2.1",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "MiniMax-M2.5",
+            "name": "MiniMax-M2.5",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "MiniMax-M2.7",
+            "name": "MiniMax-M2.7",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "MiniMax-M2-Stable",
+            "name": "MiniMax-M2-Stable",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": "oneApi/glm-5-turbo",
+      "workspace": "~/.openclaw/workspace",
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "imageModel": "oneapi/Claude Haiku 4.5"
+    }
+  },
+  "tools": {
+    "alsoAllow": [
+      "feishu_bitable_app",
+      "feishu_bitable_app_table",
+      "feishu_bitable_app_table_field",
+      "feishu_bitable_app_table_record",
+      "feishu_bitable_app_table_view",
+      "feishu_calendar_calendar",
+      "feishu_calendar_event",
+      "feishu_calendar_event_attendee",
+      "feishu_calendar_freebusy",
+      "feishu_chat",
+      "feishu_chat_members",
+      "feishu_create_doc",
+      "feishu_doc_comments",
+      "feishu_doc_media",
+      "feishu_drive_file",
+      "feishu_fetch_doc",
+      "feishu_get_user",
+      "feishu_im_bot_image",
+      "feishu_im_user_fetch_resource",
+      "feishu_im_user_get_messages",
+      "feishu_im_user_get_thread_messages",
+      "feishu_im_user_message",
+      "feishu_im_user_search_messages",
+      "feishu_oauth",
+      "feishu_oauth_batch_auth",
+      "feishu_search_doc_wiki",
+      "feishu_search_user",
+      "feishu_sheet",
+      "feishu_task_comment",
+      "feishu_task_subtask",
+      "feishu_task_task",
+      "feishu_task_tasklist",
+      "feishu_update_doc",
+      "feishu_wiki_space",
+      "feishu_wiki_space_node"
+    ],
+    "web": {
+      "fetch": {
+        "enabled": true
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "channels": {
+    "qqbot": {
+      "enabled": true,
+      "allowFrom": [
+        "*"
+      ],
+      "appId": "1903747359",
+      "clientSecret": "b8SZT9bq********"
+    },
+    "feishu": {
+      "enabled": true,
+      "appId": "cli_a944ae4da23adcca",
+      "appSecret": "YW7rzFHo************************",
+      "domain": "feishu",
+      "connectionMode": "websocket",
+      "requireMention": true,
+      "dmPolicy": "allowlist",
+      "allowFrom": [
+        "ou_72ea6ea1f81dcc5e7ea1d4301901d4d4"
+      ],
+      "groupAllowFrom": [
+        "ou_72ea6ea1f81dcc5e7ea1d4301901d4d4"
+      ],
+      "groupPolicy": "allowlist",
+      "groups": {
+        "*": {
+          "enabled": true
+        }
+      }
+    },
+    "openclaw-weixin": {
+      "channelConfigUpdatedAt": "2026-04-02T14:25:35.977Z"
+    },
+    "xiaodu": {
+      "enabled": true,
+      "accessToken": "xiaodu-X****************************************************************",
+      "dmPolicy": "open",
+      "allowFrom": [
+        "*"
+      ]
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "c444d200****************************************"
+    }
+  },
+  "plugins": {
+    "allow": [
+      "openclaw-lark",
+      "openclaw-qqbot",
+      "qqbot",
+      "openclaw-weixin",
+      "openclaw-xiaodu"
+    ],
+    "entries": {
+      "openclaw-weixin": {
+        "enabled": true
+      },
+      "openclaw-safeshield": {
+        "enabled": true
+      },
+      "openclaw-qqbot": {
+        "enabled": true
+      },
+      "feishu": {
+        "enabled": false
+      },
+      "openclaw-lark": {
+        "enabled": true
+      },
+      "qqbot": {
+        "enabled": true
+      },
+      "openclaw-xiaodu": {
+        "enabled": true
+      }
+    },
+    "installs": {
+      "openclaw-weixin": {
+        "source": "npm",
+        "spec": "@tencent-weixin/openclaw-weixin@latest",
+        "installPath": "~/.openclaw/extensions/openclaw-weixin",
+        "version": "2.1.3",
+        "resolvedName": "@tencent-weixin/openclaw-weixin",
+        "resolvedVersion": "2.1.3",
+        "resolvedSpec": "@tencent-weixin/openclaw-weixin@2.1.3",
+        "integrity": "sha512-NuzQo4yubbLaZZkpVz5yxEWdRR8KJlQkmUtDbIxKoHjjChvCWG1DAjx4/er95hS8muG/4h4HL7nB4JJqMVrgPw==",
+        "shasum": "b6cbc8187a06983ae912aee53f4f55e424680611",
+        "resolvedAt": "2026-04-02T14:21:52.240Z",
+        "installedAt": "2026-04-02T14:22:48.680Z"
+      },
+      "openclaw-trello": {
+        "source": "npm",
+        "spec": "openclaw-trello",
+        "installPath": "~/.openclaw/extensions/openclaw-trello",
+        "version": "1.1.1",
+        "resolvedName": "openclaw-trello",
+        "resolvedVersion": "1.1.1",
+        "resolvedSpec": "openclaw-trello@1.1.1",
+        "integrity": "sha512-whgNkyeaNrT3S6SxnMThy0tijStV8BGG5ysT8MhF3/EdF1lPo/7kb3u4+vWSHtLBsW5ZN3yw8cTBfhqY7jox4g==",
+        "shasum": "9dd242081d6d0d03cdf201d9796bef06f3385ad4",
+        "resolvedAt": "2026-04-02T06:33:50.328Z",
+        "installedAt": "2026-04-02T06:33:52.846Z"
+      },
+      "openclaw-qqbot": {
+        "source": "npm",
+        "spec": "@tencent-connect/openclaw-qqbot@latest",
+        "installPath": "~/.openclaw/extensions/openclaw-qqbot",
+        "version": "1.6.7",
+        "resolvedName": "@tencent-connect/openclaw-qqbot",
+        "resolvedVersion": "1.6.7",
+        "resolvedSpec": "@tencent-connect/openclaw-qqbot@1.6.7",
+        "integrity": "sha512-0SynvYuS+/QZ5nmX1mTw46zR07Hiqzeo9SZqZPy2T39gLpxbg2Ifey01BfZDhM+KbRzIG+M0k2/R8jj0OzFxVA==",
+        "shasum": "3f2c4e9bff86f0708e694fe2097d5439df253759",
+        "resolvedAt": "2026-04-02T06:44:55.605Z",
+        "installedAt": "2026-04-02T06:46:54.058Z"
+      },
+      "openclaw-lark": {
+        "source": "npm",
+        "spec": "@larksuite/openclaw-lark@2026.3.18",
+        "installPath": "~/.openclaw/extensions/openclaw-lark",
+        "version": "2026.3.18",
+        "resolvedName": "@larksuite/openclaw-lark",
+        "resolvedVersion": "2026.3.18",
+        "resolvedSpec": "@larksuite/openclaw-lark@2026.3.18",
+        "integrity": "sha512-9qqO0a1HQ+2E9jvob/13jf1ZDfe39vzr7SgYFgtNc/ajv+jFaC7sweONyPZbiQ22CF+lIWb4FvSve74ev0Irnw==",
+        "shasum": "5358c445b0fcfc65e99462b2a15c755bf39919f8",
+        "resolvedAt": "2026-04-02T06:50:23.230Z",
+        "installedAt": "2026-04-02T06:50:47.235Z"
+      },
+      "openclaw-xiaodu": {
+        "source": "npm",
+        "spec": "openclaw-xiaodu",
+        "installPath": "~/.openclaw/extensions/openclaw-xiaodu",
+        "version": "0.0.15",
+        "resolvedName": "openclaw-xiaodu",
+        "resolvedVersion": "0.0.15",
+        "resolvedSpec": "openclaw-xiaodu@0.0.15",
+        "integrity": "sha512-3mVgRXVrd2CsR2SAGJsSzNoFDghHEBy2wil+dFQUv7P6utKPzwWPoBFEduGiUZ4l684lkWFK+1w1VYzf4UkvGw==",
+        "shasum": "bd8b1c8de3574ac13f823a06884d2671805b32e0",
+        "resolvedAt": "2026-04-08T03:28:54.650Z",
+        "installedAt": "2026-04-08T03:29:32.802Z"
+      }
+    }
+  },
+  "mcp": {
+    "servers": {
+      "open-meteo": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "open-meteo-mcp-server"
+        ]
+      }
+    }
+  }
+}
