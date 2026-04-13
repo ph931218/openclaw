@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.5",
-    "lastTouchedAt": "2026-04-08T03:31:24.359Z"
+    "lastTouchedAt": "2026-04-08T09:30:47.899Z"
   },
   "wizard": {
     "lastRunAt": "2026-04-02T04:20:08.812Z",
@@ -166,7 +166,8 @@
             "api": "openai-completions",
             "reasoning": false,
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "cost": {
               "input": 0,
@@ -183,7 +184,8 @@
             "api": "openai-completions",
             "reasoning": false,
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "cost": {
               "input": 0,
@@ -200,7 +202,8 @@
             "api": "openai-completions",
             "reasoning": false,
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "cost": {
               "input": 0,
@@ -217,7 +220,8 @@
             "api": "openai-completions",
             "reasoning": false,
             "input": [
-              "text"
+              "text",
+              "image"
             ],
             "cost": {
               "input": 0,
@@ -226,6 +230,23 @@
               "cacheWrite": 0
             },
             "contextWindow": 128000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "GLM-5.1",
+            "name": "GLM-5.1",
+            "api": "openai-completions",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
             "maxTokens": 8192
           }
         ]
@@ -239,7 +260,7 @@
       "compaction": {
         "mode": "safeguard"
       },
-      "imageModel": "oneapi/Claude Haiku 4.5"
+      "imageModel": "oneapi/MiniMax-M2.7"
     }
   },
   "tools": {
@@ -332,6 +353,11 @@
       "allowFrom": [
         "*"
       ]
+    },
+    "infoflow": {
+      "enabled": true,
+      "appKey": "3cb7bc2b7b11a348ed09cd770784a013",
+      "appSecret": "fqIPBod4MJvmymWuEYLaWJAMLp8s6tlA"
     }
   },
   "gateway": {
@@ -347,7 +373,8 @@
       "openclaw-qqbot",
       "qqbot",
       "openclaw-weixin",
-      "openclaw-xiaodu"
+      "openclaw-xiaodu",
+      "infoflow-openclaw-plugin"
     ],
     "entries": {
       "openclaw-weixin": {
@@ -369,6 +396,9 @@
         "enabled": true
       },
       "openclaw-xiaodu": {
+        "enabled": true
+      },
+      "infoflow-openclaw-plugin": {
         "enabled": true
       }
     },
@@ -437,6 +467,19 @@
         "shasum": "bd8b1c8de3574ac13f823a06884d2671805b32e0",
         "resolvedAt": "2026-04-08T03:28:54.650Z",
         "installedAt": "2026-04-08T03:29:32.802Z"
+      },
+      "infoflow-openclaw-plugin": {
+        "source": "npm",
+        "spec": "@baidu/infoflow-openclaw-plugin@beta",
+        "installPath": "~/.openclaw/extensions/infoflow-openclaw-plugin",
+        "version": "2026.4.8-beta.1",
+        "resolvedName": "@baidu/infoflow-openclaw-plugin",
+        "resolvedVersion": "2026.4.8-beta.1",
+        "resolvedSpec": "@baidu/infoflow-openclaw-plugin@2026.4.8-beta.1",
+        "integrity": "sha512-fNrayb1pdjD7fdDlUQocJqxsbFGJg9rEo9eYy7o8kjq5lVDMBILPFscnL8OuPOzx2WCRj3jGEDvsCpy3bF8k+w==",
+        "shasum": "88f4ecbca0187b9d8e635e8df66d053abeddcff7",
+        "resolvedAt": "2026-04-08T09:30:47.533Z",
+        "installedAt": "2026-04-08T09:30:47.689Z"
       }
     }
   },

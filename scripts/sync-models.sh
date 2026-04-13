@@ -75,10 +75,10 @@ if [ -n "$NEW_MODELS" ]; then
     echo ""
     echo "=== 执行安全合并 ==="
 
-    python3 << 'PYEOF' > "$TMP_FILE"
+    echo "$NEW_MODELS" | sed '/^$/d' | python3 - "$CONFIG_FILE" > "$TMP_FILE.out" << PYEOF
 import json, sys
 
-config_path = "$CONFIG_FILE"
+config_path = sys.argv[1]
 with open(config_path) as f:
     config = json.load(f)
 
@@ -110,8 +110,6 @@ for model_id in new_ids:
 json.dump(config, sys.stdout, indent=2, ensure_ascii=False)
 print(f'\n共新增 {len(new_ids)} 个模型', file=sys.stderr)
 PYEOF
-    echo "$NEW_MODELS" | python3 "$TMP_FILE" > "$TMP_FILE.out"
-
     # 校验输出是合法 JSON
     python3 -c "json.load(open('$TMP_FILE.out'))" || { echo "ERROR: 输出不是合法 JSON，放弃更新"; rm -f "$TMP_FILE.out"; exit 1; }
 
