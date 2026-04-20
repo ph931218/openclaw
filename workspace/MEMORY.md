@@ -9,6 +9,7 @@
 5. **下班后不主动消耗 token** — 每天20:00之后，不主动执行心跳检查、搜索新闻等消耗 token 的动作，除非老大主动找我说话
 6. **其他平台消息可以使用 token** — 当接收到其他地方的机器人发来的消息时，可以使用 token（如搜索等）
 8. **图片识别失败自动换模型** — 配置里的 input 字段不一定准确。要根据自己对模型能力的了解来判断哪些真正支持 vision，然后逐个尝试，找到能用的就改配置文件。**实测结果（2026-04-08 OneAPI）：MiniMax-M2.1 ✅ | MiniMax-M2.5 ✅ | MiniMax-M2.7 ✅ | Claude Haiku 4.5 ❌（ARN映射缺失）| Claude Sonnet 4.6 ❌（base64转换失败）| Claude Opus 4.6 ❌ | GLM-5-Turbo ❌ | GLM-5 ❌ | Kimi-K2.5 ❌ | MiniMax-M2-Stable ❌（负载高）| 智谱Coding Plan ❌（无视觉模型）。当前 imageModel = oneapi/MiniMax-M2.7
+9. **OpenClaw 新版本直接更新** — 老大说之后有新版本不用问，直接帮他更新就行（2026-04-17）
 
 ## 教训
 

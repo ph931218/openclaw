@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.4.5",
-    "lastTouchedAt": "2026-04-08T09:30:47.899Z"
+    "lastTouchedVersion": "2026.4.11",
+    "lastTouchedAt": "2026-04-13T03:37:17.113Z"
   },
   "wizard": {
     "lastRunAt": "2026-04-02T04:20:08.812Z",
@@ -374,7 +374,9 @@
       "qqbot",
       "openclaw-weixin",
       "openclaw-xiaodu",
-      "infoflow-openclaw-plugin"
+      "infoflow-openclaw-plugin",
+      "memory-core",
+      "openclaw-safeshield"
     ],
     "entries": {
       "openclaw-weixin": {
