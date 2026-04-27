@@ -9,11 +9,19 @@
    - 尝试发送每日新闻早报
    - **发送流程：**
      a. 用 `web_fetch` 抓取以下新闻源：
+        **国内源：**
         - 百度新闻（搜索关键词轮流）：AI人工智能最新进展、国际时事、科技互联网、经济财经
         - 今日头条：AI人工智能、国际新闻、科技、财经
         - 腾讯新闻：AI、国际、科技、财经
+        **海外源（本地可访问外网）：**
         - Hacker News (https://news.ycombinator.com/)
         - GitHub Trending
+        - TechCrunch AI (https://techcrunch.com/category/artificial-intelligence/)
+        - The Verge AI (https://www.theverge.com/ai-artificial-intelligence)
+        - VentureBeat AI (https://venturebeat.com/category/ai/)
+        - Reddit r/artificial (https://www.reddit.com/r/artificial/hot/)
+        - TLDR AI (https://tldr.tech/ai)
+        - 官方博客：OpenAI (https://openai.com/blog)、Anthropic (https://www.anthropic.com/news)、Google AI Blog (https://ai.googleblog.com/)
      b. **新闻早报部分：**
         - 类别范围：🤖 AI / 🌍 国际 / 💻 科技 / 💰 财经 / 🔬 前沿科技
         - ❌ 不包含：八卦娱乐、明星、综艺
