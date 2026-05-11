@@ -41,12 +41,26 @@ def mask(s, keep=8):
 with open('$REPO/config/openclaw.json') as f:
     c = json.load(f)
 for p in SENSITIVE:
-    o = c
-    for k in p[:-1]: o = o[k]
-    o[p[-1]] = mask(o[p[-1]])
-c['agents']['defaults']['workspace'] = '~/.openclaw/workspace'
+    try:
+        o = c
+        for k in p[:-1]: 
+            if k not in o:
+                break
+            o = o[k]
+        else:
+            if p[-1] in o:
+                o[p[-1]] = mask(o[p[-1]])
+    except (KeyError, TypeError):
+        pass  # Skip if path doesn't exist
+
+# Always update workspace path
+if 'agents' in c and 'defaults' in c['agents']:
+    c['agents']['defaults']['workspace'] = '~/.openclaw/workspace'
+
+# Update plugin install paths
 for n, i in c.get('plugins',{}).get('installs',{}).items():
     i['installPath'] = '~/.openclaw/extensions/' + n.split('/')[-1]
+
 with open('$REPO/config/openclaw.json','w') as f:
     json.dump(c, f, indent=2, ensure_ascii=False)
 print('  ✅ 脱敏完成')
