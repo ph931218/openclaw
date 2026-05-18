@@ -16,33 +16,35 @@
 2. 如果今天的日期不等于上次发送日期，并且当前时间 >= 8:00：
    - 尝试发送每日新闻早报
    - **发送流程：**
-     a. 用 `web_fetch` 抓取以下新闻源：
-        **国内源：**
-        - 百度新闻（搜索关键词轮流）：AI人工智能最新进展、国际时事、科技互联网、经济财经
-        - 今日头条：AI人工智能、国际新闻、科技、财经
-        - 腾讯新闻：AI、国际、科技、财经
-        **海外源（本地可访问外网）：**
-        - Hacker News (https://news.ycombinator.com/)
-        - GitHub Trending
-        - TechCrunch AI (https://techcrunch.com/category/artificial-intelligence/)
-        - The Verge AI (https://www.theverge.com/ai-artificial-intelligence)
-        - VentureBeat AI (https://venturebeat.com/category/ai/)
-        - Reddit r/artificial (https://www.reddit.com/r/artificial/hot/)
-        - TLDR AI (https://tldr.tech/ai)
-        - 官方博客：OpenAI (https://openai.com/blog)、Anthropic (https://www.anthropic.com/news)、Google AI Blog (https://ai.googleblog.com/)
+     a. 执行 cn-hot-trends skill 脚本抓取热榜数据：
+        ```bash
+        cd ~/.openclaw/workspace/skills/cn-trends-aggregator && python3 scripts/fetch_trends.py --format json --limit 15 --sources baidu,toutiao,hn,github
+        ```
      b. **新闻早报部分：**
         - 类别范围：🤖 AI / 🌍 国际 / 💻 科技 / 💰 财经 / 🔬 前沿科技
-        - ❌ 不包含：八卦娱乐、明星、综艺
-        - 合并去重后，每个类别 1-2 条，总共 5-10 条
-     c. **前端大事部分（原前端技术大事监控，已合并）：**
-        - 从 HN 和 GitHub Trending 中筛选前端相关大事
+        - ❌ 不包含：八卦娱乐、明星、综艺、体育（除非重大事件）
+        - 从百度热榜和头条中筛选国内热点，从 HN 和 GitHub 中筛选科技/AI 热点
+        - 合并去重后，按类别分组，总共 5-15 条
+        - 输出为 Markdown 格式（标题 + 简要说明 + 链接）
+     c. **前端大事部分：**
+        - 从 HN 和 GitHub 结果中筛选前端相关大事
         - 标准：主流框架大版本发布（Vue 4、React 20 等）、重大安全漏洞、广泛影响的 Breaking Change
-        - 如果有大事：在早报中追加「🔧 前端技术速递」板块，或单独推送
+        - 如果有大事：在早报中追加「🔧 前端技术速递」板块
         - 如果无大事：不提及，保持安静
-     d. 如果国内源全部失败，用 HN 作为备用
-     e. 如果全部失败，更新 note 为失败原因，**不更新日期**，下次心跳继续重试
-     f. 如果当前时间 >= 21:00（下班后），停止重试，note 标记为"超过推送时间窗口"
+     d. 如果脚本执行失败，更新 note 为失败原因，**不更新日期**，下次心跳继续重试
+     e. 如果当前时间 >= 21:00（下班后），停止重试，note 标记为"超过推送时间窗口"
    - 发送成功后更新 `memory/ai-news-state.json` 的日期为今天
+   - **同步发帖到龙虾社区：**
+     a. 从已生成的新闻早报内容中，提取核心新闻（去重、去掉 Markdown 格式符号）
+     b. 构造帖子 JSON 文件：
+        ```bash
+        echo '{"title": "📰 每日热点速递（'$(date +%m-%d)'）", "content": "🦞 来自 桐人 的每日新闻分享\n\n{精简后的新闻列表，每条用简短一句话概括}"}' > /tmp/lobster_news_post.json
+        ```
+     c. 调用社区脚本发帖：
+        ```bash
+        python3 ~/.openclaw/workspace/skills/lobster-community/scripts/community_runtime.py create-post-with-content --post-file /tmp/lobster_news_post.json
+        ```
+     d. 发帖失败不影响早报流程，静默跳过即可
    - **每周日附加 AI 大厂周报：** 如果今天是周日，在早报之后追加 AI 大厂周报
      - **覆盖厂家：**
        - 国内：百度、阿里、字节、腾讯、智谱、月之暗面、MiniMax、DeepSeek、零一万物、百川

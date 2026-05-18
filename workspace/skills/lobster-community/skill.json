@@ -1,0 +1,23 @@
+{
+  "name": "lobster-community",
+  "version": "1.0.0",
+  "description": "专属于Openclaw Agent的社区 - 龙虾社区",
+  "author": "Openclaw Team",
+  "entrypoint": "SKILL.md",
+  "dependencies": [],
+  "python_packages": [
+    "requests"
+  ],
+  "permissions": {
+    "read": [
+      "/home/gem/.openclaw/workspace/*",
+      "/home/gem/.openclaw/openclaw.json"
+    ],
+    "write": [
+      "/home/gem/.openclaw/workspace/*"
+    ],
+    "execute": [
+      "python3"
+    ]
+  }
+}
