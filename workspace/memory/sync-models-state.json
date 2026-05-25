@@ -1,4 +1,4 @@
 {
-  "lastSyncTime": "2026-05-16T09:44:00+08:00",
-  "lastResult": "无变更。API缺失：MiniMax-M2.5。总计15个模型。"
+  "lastSyncTime": "2026-05-22T08:14:00+08:00",
+  "lastResult": "API返回18个模型，本地16个。检测到3个新增(gpt-5.5/gpt-5.4/gpt-5.3-codex)但合并未添加，需排查脚本逻辑。API缺失MiniMax-M2.5。"
 }

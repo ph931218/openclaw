@@ -1,0 +1,2018 @@
+{
+  "schema": "codeburn.export.v2",
+  "generated": "2026-05-18T13:25:19.442Z",
+  "currency": {
+    "code": "USD",
+    "rate": 1,
+    "symbol": "$"
+  },
+  "summary": [
+    {
+      "Period": "Today",
+      "Cost (USD)": 28.23,
+      "API Calls": 688,
+      "Sessions": 11,
+      "Projects": 3
+    },
+    {
+      "Period": "7 Days",
+      "Cost (USD)": 107.99,
+      "API Calls": 2047,
+      "Sessions": 45,
+      "Projects": 15
+    },
+    {
+      "Period": "30 Days",
+      "Cost (USD)": 187.91,
+      "API Calls": 3728,
+      "Sessions": 64,
+      "Projects": 21
+    }
+  ],
+  "periods": [
+    {
+      "label": "Today",
+      "daily": [
+        {
+          "Period": "Today",
+          "Date": "2026-05-18",
+          "Cost (USD)": 28.23,
+          "API Calls": 688,
+          "Sessions": 11,
+          "Input Tokens": 8014570,
+          "Output Tokens": 132140,
+          "Cache Read Tokens": 58920960,
+          "Cache Write Tokens": 0
+        }
+      ],
+      "activity": [
+        {
+          "Period": "Today",
+          "Activity": "Coding",
+          "Cost (USD)": 14.86,
+          "Share (%)": 52.65,
+          "Turns": 472
+        },
+        {
+          "Period": "Today",
+          "Activity": "Feature Dev",
+          "Cost (USD)": 6.48,
+          "Share (%)": 22.94,
+          "Turns": 28
+        },
+        {
+          "Period": "Today",
+          "Activity": "Conversation",
+          "Cost (USD)": 5.4,
+          "Share (%)": 19.14,
+          "Turns": 166
+        },
+        {
+          "Period": "Today",
+          "Activity": "Debugging",
+          "Cost (USD)": 1.49,
+          "Share (%)": 5.27,
+          "Turns": 8
+        },
+        {
+          "Period": "Today",
+          "Activity": "Exploration",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "Turns": 14
+        }
+      ],
+      "models": [
+        {
+          "Period": "Today",
+          "Model": "GPT-5.5",
+          "Cost (USD)": 28.23,
+          "Share (%)": 100,
+          "API Calls": 252,
+          "Input Tokens": 1876983,
+          "Output Tokens": 66872,
+          "Cache Read Tokens": 32653056,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "Today",
+          "Model": "DeepSeek-V4-Pro",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 46,
+          "Input Tokens": 474801,
+          "Output Tokens": 17784,
+          "Cache Read Tokens": 2075392,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "Today",
+          "Model": "Claude Sonnet 4.6",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 27,
+          "Input Tokens": 0,
+          "Output Tokens": 0,
+          "Cache Read Tokens": 0,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "Today",
+          "Model": "DeepSeek-V4-Flash",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 358,
+          "Input Tokens": 5662786,
+          "Output Tokens": 47484,
+          "Cache Read Tokens": 24192512,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "Today",
+          "Model": "delivery-mirror",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 5,
+          "Input Tokens": 0,
+          "Output Tokens": 0,
+          "Cache Read Tokens": 0,
+          "Cache Write Tokens": 0
+        }
+      ]
+    },
+    {
+      "label": "7 Days",
+      "daily": [
+        {
+          "Period": "7 Days",
+          "Date": "2026-05-11",
+          "Cost (USD)": 20.91,
+          "API Calls": 305,
+          "Sessions": 13,
+          "Input Tokens": 1781092,
+          "Output Tokens": 88825,
+          "Cache Read Tokens": 23330739,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Date": "2026-05-12",
+          "Cost (USD)": 5.46,
+          "API Calls": 92,
+          "Sessions": 3,
+          "Input Tokens": 945641,
+          "Output Tokens": 17337,
+          "Cache Read Tokens": 7477206,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Date": "2026-05-13",
+          "Cost (USD)": 35.61,
+          "API Calls": 450,
+          "Sessions": 9,
+          "Input Tokens": 3239432,
+          "Output Tokens": 128494,
+          "Cache Read Tokens": 39022821,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Date": "2026-05-14",
+          "Cost (USD)": 3.59,
+          "API Calls": 39,
+          "Sessions": 5,
+          "Input Tokens": 202171,
+          "Output Tokens": 8453,
+          "Cache Read Tokens": 4697856,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Date": "2026-05-15",
+          "Cost (USD)": 14.19,
+          "API Calls": 272,
+          "Sessions": 8,
+          "Input Tokens": 1808069,
+          "Output Tokens": 49814,
+          "Cache Read Tokens": 17807433,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Date": "2026-05-16",
+          "Cost (USD)": 0,
+          "API Calls": 94,
+          "Sessions": 6,
+          "Input Tokens": 812405,
+          "Output Tokens": 24064,
+          "Cache Read Tokens": 4910848,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Date": "2026-05-17",
+          "Cost (USD)": 0,
+          "API Calls": 107,
+          "Sessions": 6,
+          "Input Tokens": 1055015,
+          "Output Tokens": 32260,
+          "Cache Read Tokens": 6813952,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Date": "2026-05-18",
+          "Cost (USD)": 28.23,
+          "API Calls": 688,
+          "Sessions": 11,
+          "Input Tokens": 8014570,
+          "Output Tokens": 132140,
+          "Cache Read Tokens": 58920960,
+          "Cache Write Tokens": 0
+        }
+      ],
+      "activity": [
+        {
+          "Period": "7 Days",
+          "Activity": "Coding",
+          "Cost (USD)": 46.86,
+          "Share (%)": 43.39,
+          "Turns": 1093
+        },
+        {
+          "Period": "7 Days",
+          "Activity": "Conversation",
+          "Cost (USD)": 28.85,
+          "Share (%)": 26.72,
+          "Turns": 705
+        },
+        {
+          "Period": "7 Days",
+          "Activity": "Feature Dev",
+          "Cost (USD)": 28.37,
+          "Share (%)": 26.27,
+          "Turns": 169
+        },
+        {
+          "Period": "7 Days",
+          "Activity": "Debugging",
+          "Cost (USD)": 1.61,
+          "Share (%)": 1.49,
+          "Turns": 9
+        },
+        {
+          "Period": "7 Days",
+          "Activity": "Exploration",
+          "Cost (USD)": 1.36,
+          "Share (%)": 1.26,
+          "Turns": 55
+        },
+        {
+          "Period": "7 Days",
+          "Activity": "Brainstorming",
+          "Cost (USD)": 0.81,
+          "Share (%)": 0.75,
+          "Turns": 9
+        },
+        {
+          "Period": "7 Days",
+          "Activity": "Git Ops",
+          "Cost (USD)": 0.13,
+          "Share (%)": 0.12,
+          "Turns": 2
+        }
+      ],
+      "models": [
+        {
+          "Period": "7 Days",
+          "Model": "GPT-5.5",
+          "Cost (USD)": 103.41,
+          "Share (%)": 95.76,
+          "API Calls": 1039,
+          "Input Tokens": 7226352,
+          "Output Tokens": 302181,
+          "Cache Read Tokens": 112594816,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Model": "glm-5-turbo",
+          "Cost (USD)": 4.34,
+          "Share (%)": 4.02,
+          "API Calls": 232,
+          "Input Tokens": 1963234,
+          "Output Tokens": 49982,
+          "Cache Read Tokens": 11101005,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Model": "glm-5.1",
+          "Cost (USD)": 0.24,
+          "Share (%)": 0.22,
+          "API Calls": 17,
+          "Input Tokens": 142239,
+          "Output Tokens": 5480,
+          "Cache Read Tokens": 398272,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Model": "DeepSeek-V4-Pro",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 292,
+          "Input Tokens": 2790549,
+          "Output Tokens": 76203,
+          "Cache Read Tokens": 14695168,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Model": "Claude Sonnet 4.6",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 35,
+          "Input Tokens": 0,
+          "Output Tokens": 0,
+          "Cache Read Tokens": 0,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Model": "DeepSeek-V4-Flash",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 358,
+          "Input Tokens": 5662786,
+          "Output Tokens": 47484,
+          "Cache Read Tokens": 24192512,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Model": "delivery-mirror",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 22,
+          "Input Tokens": 0,
+          "Output Tokens": 0,
+          "Cache Read Tokens": 0,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Model": "gateway-injected",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 3,
+          "Input Tokens": 0,
+          "Output Tokens": 0,
+          "Cache Read Tokens": 0,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "7 Days",
+          "Model": "GLM-5-Turbo",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 49,
+          "Input Tokens": 73235,
+          "Output Tokens": 57,
+          "Cache Read Tokens": 42,
+          "Cache Write Tokens": 0
+        }
+      ]
+    },
+    {
+      "label": "30 Days",
+      "daily": [
+        {
+          "Period": "30 Days",
+          "Date": "2026-04-20",
+          "Cost (USD)": 1.38,
+          "API Calls": 46,
+          "Sessions": 2,
+          "Input Tokens": 435494,
+          "Output Tokens": 9943,
+          "Cache Read Tokens": 4543360,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-04-21",
+          "Cost (USD)": 4.64,
+          "API Calls": 154,
+          "Sessions": 4,
+          "Input Tokens": 1509533,
+          "Output Tokens": 58198,
+          "Cache Read Tokens": 14733632,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-04-22",
+          "Cost (USD)": 1.63,
+          "API Calls": 47,
+          "Sessions": 3,
+          "Input Tokens": 645614,
+          "Output Tokens": 21296,
+          "Cache Read Tokens": 4604672,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-04-23",
+          "Cost (USD)": 0.68,
+          "API Calls": 28,
+          "Sessions": 4,
+          "Input Tokens": 287552,
+          "Output Tokens": 11213,
+          "Cache Read Tokens": 1751232,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-04-24",
+          "Cost (USD)": 0.16,
+          "API Calls": 1,
+          "Sessions": 1,
+          "Input Tokens": 162931,
+          "Output Tokens": 107,
+          "Cache Read Tokens": 512,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-04-27",
+          "Cost (USD)": 0.02,
+          "API Calls": 41,
+          "Sessions": 2,
+          "Input Tokens": 119,
+          "Output Tokens": 1249,
+          "Cache Read Tokens": 0,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-04-28",
+          "Cost (USD)": 0.72,
+          "API Calls": 25,
+          "Sessions": 5,
+          "Input Tokens": 567609,
+          "Output Tokens": 5450,
+          "Cache Read Tokens": 646272,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-04-29",
+          "Cost (USD)": 0.18,
+          "API Calls": 136,
+          "Sessions": 4,
+          "Input Tokens": 54402,
+          "Output Tokens": 6567,
+          "Cache Read Tokens": 158016,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-05-06",
+          "Cost (USD)": 0,
+          "API Calls": 1,
+          "Sessions": 1,
+          "Input Tokens": 0,
+          "Output Tokens": 0,
+          "Cache Read Tokens": 0,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-05-07",
+          "Cost (USD)": 12.05,
+          "API Calls": 491,
+          "Sessions": 2,
+          "Input Tokens": 2973927,
+          "Output Tokens": 55087,
+          "Cache Read Tokens": 44480280,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-05-08",
+          "Cost (USD)": 23.66,
+          "API Calls": 327,
+          "Sessions": 7,
+          "Input Tokens": 2917810,
+          "Output Tokens": 98662,
+          "Cache Read Tokens": 29702603,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-05-09",
+          "Cost (USD)": 34.79,
+          "API Calls": 384,
+          "Sessions": 3,
+          "Input Tokens": 2200008,
+          "Output Tokens": 113765,
+          "Cache Read Tokens": 39839488,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-05-11",
+          "Cost (USD)": 20.91,
+          "API Calls": 305,
+          "Sessions": 13,
+          "Input Tokens": 1781092,
+          "Output Tokens": 88825,
+          "Cache Read Tokens": 23330739,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-05-12",
+          "Cost (USD)": 5.46,
+          "API Calls": 92,
+          "Sessions": 3,
+          "Input Tokens": 945641,
+          "Output Tokens": 17337,
+          "Cache Read Tokens": 7477206,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-05-13",
+          "Cost (USD)": 35.61,
+          "API Calls": 450,
+          "Sessions": 9,
+          "Input Tokens": 3239432,
+          "Output Tokens": 128494,
+          "Cache Read Tokens": 39022821,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-05-14",
+          "Cost (USD)": 3.59,
+          "API Calls": 39,
+          "Sessions": 5,
+          "Input Tokens": 202171,
+          "Output Tokens": 8453,
+          "Cache Read Tokens": 4697856,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-05-15",
+          "Cost (USD)": 14.19,
+          "API Calls": 272,
+          "Sessions": 8,
+          "Input Tokens": 1808069,
+          "Output Tokens": 49814,
+          "Cache Read Tokens": 17807433,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-05-16",
+          "Cost (USD)": 0,
+          "API Calls": 94,
+          "Sessions": 6,
+          "Input Tokens": 812405,
+          "Output Tokens": 24064,
+          "Cache Read Tokens": 4910848,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-05-17",
+          "Cost (USD)": 0,
+          "API Calls": 107,
+          "Sessions": 6,
+          "Input Tokens": 1055015,
+          "Output Tokens": 32260,
+          "Cache Read Tokens": 6813952,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Date": "2026-05-18",
+          "Cost (USD)": 28.23,
+          "API Calls": 688,
+          "Sessions": 11,
+          "Input Tokens": 8014570,
+          "Output Tokens": 132140,
+          "Cache Read Tokens": 58920960,
+          "Cache Write Tokens": 0
+        }
+      ],
+      "activity": [
+        {
+          "Period": "30 Days",
+          "Activity": "Coding",
+          "Cost (USD)": 89.75,
+          "Share (%)": 47.76,
+          "Turns": 1832
+        },
+        {
+          "Period": "30 Days",
+          "Activity": "Conversation",
+          "Cost (USD)": 50.28,
+          "Share (%)": 26.76,
+          "Turns": 1269
+        },
+        {
+          "Period": "30 Days",
+          "Activity": "Feature Dev",
+          "Cost (USD)": 37.14,
+          "Share (%)": 19.77,
+          "Turns": 229
+        },
+        {
+          "Period": "30 Days",
+          "Activity": "Exploration",
+          "Cost (USD)": 7.86,
+          "Share (%)": 4.18,
+          "Turns": 164
+        },
+        {
+          "Period": "30 Days",
+          "Activity": "Debugging",
+          "Cost (USD)": 1.81,
+          "Share (%)": 0.96,
+          "Turns": 12
+        },
+        {
+          "Period": "30 Days",
+          "Activity": "Brainstorming",
+          "Cost (USD)": 0.81,
+          "Share (%)": 0.43,
+          "Turns": 14
+        },
+        {
+          "Period": "30 Days",
+          "Activity": "Git Ops",
+          "Cost (USD)": 0.13,
+          "Share (%)": 0.07,
+          "Turns": 2
+        },
+        {
+          "Period": "30 Days",
+          "Activity": "Delegation",
+          "Cost (USD)": 0.12,
+          "Share (%)": 0.07,
+          "Turns": 2
+        }
+      ],
+      "models": [
+        {
+          "Period": "30 Days",
+          "Model": "GPT-5.5",
+          "Cost (USD)": 159.06,
+          "Share (%)": 84.65,
+          "API Calls": 1651,
+          "Input Tokens": 10543710,
+          "Output Tokens": 496389,
+          "Cache Read Tokens": 177442816,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Model": "glm-5-turbo",
+          "Cost (USD)": 19.19,
+          "Share (%)": 10.21,
+          "API Calls": 828,
+          "Input Tokens": 6737727,
+          "Output Tokens": 123288,
+          "Cache Read Tokens": 60275376,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Model": "glm-5.1",
+          "Cost (USD)": 9.53,
+          "Share (%)": 5.07,
+          "API Calls": 301,
+          "Input Tokens": 3804523,
+          "Output Tokens": 110902,
+          "Cache Read Tokens": 26835968,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Model": "Cursor (auto)",
+          "Cost (USD)": 0.13,
+          "Share (%)": 0.07,
+          "API Calls": 177,
+          "Input Tokens": 802,
+          "Output Tokens": 8601,
+          "Cache Read Tokens": 0,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Model": "Opus 4.7",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 3,
+          "Input Tokens": 62,
+          "Output Tokens": 0,
+          "Cache Read Tokens": 0,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Model": "DeepSeek-V4-Pro",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 292,
+          "Input Tokens": 2790549,
+          "Output Tokens": 76203,
+          "Cache Read Tokens": 14695168,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Model": "Claude Sonnet 4.6",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 35,
+          "Input Tokens": 0,
+          "Output Tokens": 0,
+          "Cache Read Tokens": 0,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Model": "DeepSeek-V4-Flash",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 358,
+          "Input Tokens": 5662786,
+          "Output Tokens": 47484,
+          "Cache Read Tokens": 24192512,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Model": "delivery-mirror",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 28,
+          "Input Tokens": 0,
+          "Output Tokens": 0,
+          "Cache Read Tokens": 0,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Model": "gateway-injected",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 5,
+          "Input Tokens": 0,
+          "Output Tokens": 0,
+          "Cache Read Tokens": 0,
+          "Cache Write Tokens": 0
+        },
+        {
+          "Period": "30 Days",
+          "Model": "GLM-5-Turbo",
+          "Cost (USD)": 0,
+          "Share (%)": 0,
+          "API Calls": 49,
+          "Input Tokens": 73235,
+          "Output Tokens": 57,
+          "Cache Read Tokens": 42,
+          "Cache Write Tokens": 0
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "Project": "Users/puhengheng/pro/createSkill/baidu/duer/fe/duer/swan",
+      "Cost (USD)": 50.39,
+      "Avg/Session (USD)": 25.2,
+      "Share (%)": 26.82,
+      "API Calls": 530,
+      "Sessions": 2
+    },
+    {
+      "Project": "Users/puhengheng/pro/fe/duer/swan",
+      "Cost (USD)": 36.02,
+      "Avg/Session (USD)": 18.01,
+      "Share (%)": 19.17,
+      "API Calls": 357,
+      "Sessions": 2
+    },
+    {
+      "Project": "Users/puhengheng/pro/createSkill/baidu/duer/fe/package",
+      "Cost (USD)": 33.06,
+      "Avg/Session (USD)": 11.02,
+      "Share (%)": 17.6,
+      "API Calls": 331,
+      "Sessions": 3
+    },
+    {
+      "Project": "main",
+      "Cost (USD)": 19.19,
+      "Avg/Session (USD)": 0.77,
+      "Share (%)": 10.21,
+      "API Calls": 1595,
+      "Sessions": 25
+    },
+    {
+      "Project": "Users/puhengheng/pro/baidu/duer/fe/super/app/h5/packages/superapp",
+      "Cost (USD)": 14.23,
+      "Avg/Session (USD)": 4.74,
+      "Share (%)": 7.57,
+      "API Calls": 127,
+      "Sessions": 3
+    },
+    {
+      "Project": "Users/puhengheng/pro/低代码及DPL数据生成/DPL",
+      "Cost (USD)": 9.51,
+      "Avg/Session (USD)": 9.51,
+      "Share (%)": 5.06,
+      "API Calls": 93,
+      "Sessions": 1
+    },
+    {
+      "Project": "/Users/puhengheng/pro/fe/duer/swan",
+      "Cost (USD)": 6.91,
+      "Avg/Session (USD)": 1.38,
+      "Share (%)": 3.68,
+      "API Calls": 215,
+      "Sessions": 5
+    },
+    {
+      "Project": "Users/puhengheng/pro/baidu/duer/fe/public/h5LowCode",
+      "Cost (USD)": 6.03,
+      "Avg/Session (USD)": 6.03,
+      "Share (%)": 3.21,
+      "API Calls": 61,
+      "Sessions": 1
+    },
+    {
+      "Project": "Users/puhengheng/pro/copy/baidu/duer/fe/duer/swan",
+      "Cost (USD)": 5.29,
+      "Avg/Session (USD)": 2.65,
+      "Share (%)": 2.82,
+      "API Calls": 61,
+      "Sessions": 2
+    },
+    {
+      "Project": "/Users/puhengheng/pro/baidu/duer/fe/public/h5LowCode",
+      "Cost (USD)": 2.38,
+      "Avg/Session (USD)": 2.38,
+      "Share (%)": 1.27,
+      "API Calls": 70,
+      "Sessions": 1
+    },
+    {
+      "Project": "Users/puhengheng/pro/baidu/duer/fe/public",
+      "Cost (USD)": 2.33,
+      "Avg/Session (USD)": 2.33,
+      "Share (%)": 1.24,
+      "API Calls": 44,
+      "Sessions": 1
+    },
+    {
+      "Project": "Users/puhengheng",
+      "Cost (USD)": 2.1,
+      "Avg/Session (USD)": 0.52,
+      "Share (%)": 1.12,
+      "API Calls": 33,
+      "Sessions": 4
+    },
+    {
+      "Project": "Users/puhengheng/Documents/Codex/2026/05/11/new/chat",
+      "Cost (USD)": 0.09,
+      "Avg/Session (USD)": 0.09,
+      "Share (%)": 0.05,
+      "API Calls": 3,
+      "Sessions": 1
+    },
+    {
+      "Project": "cursor",
+      "Cost (USD)": 0.08,
+      "Avg/Session (USD)": 0.08,
+      "Share (%)": 0.05,
+      "API Calls": 162,
+      "Sessions": 1
+    },
+    {
+      "Project": "/Users/puhengheng",
+      "Cost (USD)": 0.08,
+      "Avg/Session (USD)": 0.04,
+      "Share (%)": 0.04,
+      "API Calls": 6,
+      "Sessions": 2
+    },
+    {
+      "Project": "/Users/puhengheng/pro/createSkill/baidu/duer/fe/package",
+      "Cost (USD)": 0.07,
+      "Avg/Session (USD)": 0.02,
+      "Share (%)": 0.04,
+      "API Calls": 4,
+      "Sessions": 3
+    },
+    {
+      "Project": "/Users/puhengheng/pro/////DPL/////DPL",
+      "Cost (USD)": 0.05,
+      "Avg/Session (USD)": 0.05,
+      "Share (%)": 0.03,
+      "API Calls": 4,
+      "Sessions": 1
+    },
+    {
+      "Project": "swan",
+      "Cost (USD)": 0.05,
+      "Avg/Session (USD)": 0.02,
+      "Share (%)": 0.03,
+      "API Calls": 28,
+      "Sessions": 3
+    },
+    {
+      "Project": "/Users/puhengheng/Library/Containers/com/tencent/xinWeChat/Data/Documents/xwechat/files/PH19931218/084b/msg/video",
+      "Cost (USD)": 0.02,
+      "Avg/Session (USD)": 0.02,
+      "Share (%)": 0.01,
+      "API Calls": 2,
+      "Sessions": 1
+    },
+    {
+      "Project": "/Users/puhengheng/pro/createSkill",
+      "Cost (USD)": 0.01,
+      "Avg/Session (USD)": 0.01,
+      "Share (%)": 0.01,
+      "API Calls": 1,
+      "Sessions": 1
+    },
+    {
+      "Project": "h5",
+      "Cost (USD)": 0,
+      "Avg/Session (USD)": 0,
+      "Share (%)": 0,
+      "API Calls": 1,
+      "Sessions": 1
+    }
+  ],
+  "sessions": [
+    {
+      "Project": "Users/puhengheng/pro/createSkill/baidu/duer/fe/duer/swan",
+      "Session ID": "rollout-2026-05-08T18-01-59-019e0709-70de-74a3-864d-f0e93b497e49",
+      "Started At": "2026-05-08T10:02:03.390Z",
+      "Cost (USD)": 26.57,
+      "API Calls": 286,
+      "Turns": 286
+    },
+    {
+      "Project": "Users/puhengheng/pro/createSkill/baidu/duer/fe/package",
+      "Session ID": "rollout-2026-05-11T19-07-33-019e16b8-8b99-71c1-9ceb-8519f3f0135f",
+      "Started At": "2026-05-11T11:09:10.183Z",
+      "Cost (USD)": 24.83,
+      "API Calls": 271,
+      "Turns": 271
+    },
+    {
+      "Project": "Users/puhengheng/pro/createSkill/baidu/duer/fe/duer/swan",
+      "Session ID": "rollout-2026-05-09T14-06-54-019e0b58-92a7-7292-8b09-85c0a97b1a72",
+      "Started At": "2026-05-09T06:07:34.202Z",
+      "Cost (USD)": 23.82,
+      "API Calls": 244,
+      "Turns": 244
+    },
+    {
+      "Project": "Users/puhengheng/pro/fe/duer/swan",
+      "Session ID": "rollout-2026-05-18T19-51-11-019e3aec-ffb9-76b2-aa0f-aad604e19c38",
+      "Started At": "2026-05-18T11:52:38.992Z",
+      "Cost (USD)": 19.55,
+      "API Calls": 171,
+      "Turns": 171
+    },
+    {
+      "Project": "Users/puhengheng/pro/fe/duer/swan",
+      "Session ID": "rollout-2026-05-11T16-25-36-019e1624-4734-74f0-8ed8-0c91909bb70d",
+      "Started At": "2026-05-11T08:27:00.648Z",
+      "Cost (USD)": 16.47,
+      "API Calls": 186,
+      "Turns": 186
+    },
+    {
+      "Project": "main",
+      "Session ID": "4fa445b3-b499-4366-877a-a63461ca42cf",
+      "Started At": "2026-05-07T07:22:49.250Z",
+      "Cost (USD)": 12.05,
+      "API Calls": 490,
+      "Turns": 490
+    },
+    {
+      "Project": "Users/puhengheng/pro/低代码及DPL数据生成/DPL",
+      "Session ID": "rollout-2026-05-13T11-36-39-019e1f68-72c6-7fc0-ad11-86d434465a8c",
+      "Started At": "2026-05-13T03:37:50.959Z",
+      "Cost (USD)": 9.51,
+      "API Calls": 93,
+      "Turns": 93
+    },
+    {
+      "Project": "Users/puhengheng/pro/createSkill/baidu/duer/fe/package",
+      "Session ID": "rollout-2026-05-11T17-40-07-019e1668-7d34-7573-9791-8484130c10c4",
+      "Started At": "2026-05-11T09:40:48.259Z",
+      "Cost (USD)": 8.21,
+      "API Calls": 58,
+      "Turns": 58
+    },
+    {
+      "Project": "Users/puhengheng/pro/baidu/duer/fe/super/app/h5/packages/superapp",
+      "Session ID": "rollout-2026-05-14T14-12-39-019e251d-a3ba-7303-af93-c093575041f0",
+      "Started At": "2026-05-14T06:13:15.591Z",
+      "Cost (USD)": 7.15,
+      "API Calls": 64,
+      "Turns": 64
+    },
+    {
+      "Project": "Users/puhengheng/pro/baidu/duer/fe/super/app/h5/packages/superapp",
+      "Session ID": "rollout-2026-05-15T17-03-52-019e2ae0-bd10-73d3-8be6-6d2843dbc1fa",
+      "Started At": "2026-05-15T09:05:05.478Z",
+      "Cost (USD)": 6.68,
+      "API Calls": 57,
+      "Turns": 57
+    },
+    {
+      "Project": "/Users/puhengheng/pro/fe/duer/swan",
+      "Session ID": "0fcc1037-4d39-4837-ab08-23d1d6749d3a",
+      "Started At": "2026-04-20T06:53:30.457Z",
+      "Cost (USD)": 6.45,
+      "API Calls": 177,
+      "Turns": 63
+    },
+    {
+      "Project": "Users/puhengheng/pro/baidu/duer/fe/public/h5LowCode",
+      "Session ID": "rollout-2026-05-18T11-21-44-019e391a-98b2-7a23-a0e3-ee30fd8ecb2c",
+      "Started At": "2026-05-18T03:22:17.462Z",
+      "Cost (USD)": 6.03,
+      "API Calls": 61,
+      "Turns": 61
+    },
+    {
+      "Project": "Users/puhengheng/pro/copy/baidu/duer/fe/duer/swan",
+      "Session ID": "rollout-2026-05-08T16-20-16-019e06ac-5060-7d41-ad15-8b626c36cefb",
+      "Started At": "2026-05-08T08:42:24.737Z",
+      "Cost (USD)": 5.27,
+      "API Calls": 59,
+      "Turns": 59
+    },
+    {
+      "Project": "main",
+      "Session ID": "7b0ffe54-ec79-4968-b182-1c74836e6673",
+      "Started At": "2026-05-08T03:49:18.781Z",
+      "Cost (USD)": 2.8,
+      "API Calls": 108,
+      "Turns": 108
+    },
+    {
+      "Project": "/Users/puhengheng/pro/baidu/duer/fe/public/h5LowCode",
+      "Session ID": "b850a326-75a3-4e92-97f5-613f24929b7e",
+      "Started At": "2026-04-20T07:45:01.409Z",
+      "Cost (USD)": 2.38,
+      "API Calls": 70,
+      "Turns": 18
+    },
+    {
+      "Project": "Users/puhengheng/pro/baidu/duer/fe/public",
+      "Session ID": "rollout-2026-05-11T14-52-17-019e15ce-d590-7cf2-ab37-14326593baf4",
+      "Started At": "2026-05-11T06:52:21.707Z",
+      "Cost (USD)": 2.33,
+      "API Calls": 44,
+      "Turns": 44
+    },
+    {
+      "Project": "Users/puhengheng",
+      "Session ID": "rollout-2026-05-08T16-15-18-019e06a7-c3ba-76e2-b38a-350e40e19cd4",
+      "Started At": "2026-05-08T08:15:31.639Z",
+      "Cost (USD)": 1.27,
+      "API Calls": 16,
+      "Turns": 16
+    },
+    {
+      "Project": "main",
+      "Session ID": "794632d1-3ccf-4a11-a841-2378986e4a4d",
+      "Started At": "2026-05-12T03:26:01.244Z",
+      "Cost (USD)": 1.13,
+      "API Calls": 48,
+      "Turns": 48
+    },
+    {
+      "Project": "main",
+      "Session ID": "da2edb77-6bbb-4306-a571-5b3fff30cae9",
+      "Started At": "2026-05-13T06:31:35.953Z",
+      "Cost (USD)": 1.08,
+      "API Calls": 70,
+      "Turns": 70
+    },
+    {
+      "Project": "main",
+      "Session ID": "5dbc8d94-4cbc-4975-8da9-afed422e3a4c",
+      "Started At": "2026-05-11T10:06:36.978Z",
+      "Cost (USD)": 0.85,
+      "API Calls": 45,
+      "Turns": 45
+    },
+    {
+      "Project": "main",
+      "Session ID": "6e5edc49-fca1-44b2-9d4f-ab9d9f4c916f",
+      "Started At": "2026-05-15T02:51:18.157Z",
+      "Cost (USD)": 0.77,
+      "API Calls": 154,
+      "Turns": 154
+    },
+    {
+      "Project": "Users/puhengheng",
+      "Session ID": "rollout-2026-05-12T14-39-51-019e1ae9-d01d-7762-9b3d-ab4d32571281",
+      "Started At": "2026-05-12T06:40:19.238Z",
+      "Cost (USD)": 0.53,
+      "API Calls": 10,
+      "Turns": 10
+    },
+    {
+      "Project": "main",
+      "Session ID": "aa862df2-feec-457a-9eaa-4207457397dc",
+      "Started At": "2026-05-13T05:58:30.858Z",
+      "Cost (USD)": 0.44,
+      "API Calls": 28,
+      "Turns": 28
+    },
+    {
+      "Project": "Users/puhengheng/pro/baidu/duer/fe/super/app/h5/packages/superapp",
+      "Session ID": "rollout-2026-05-11T15-59-17-019e160c-2e4d-70a1-ba72-6ce332f24b62",
+      "Started At": "2026-05-11T07:59:44.296Z",
+      "Cost (USD)": 0.4,
+      "API Calls": 6,
+      "Turns": 6
+    },
+    {
+      "Project": "Users/puhengheng",
+      "Session ID": "rollout-2026-05-13T11-25-15-019e1f5e-050c-7ea3-bf60-2f0358bb9967",
+      "Started At": "2026-05-13T03:25:41.124Z",
+      "Cost (USD)": 0.29,
+      "API Calls": 5,
+      "Turns": 5
+    },
+    {
+      "Project": "/Users/puhengheng/pro/fe/duer/swan",
+      "Session ID": "agent-a927ffa06505c9ec3",
+      "Started At": "2026-04-21T11:21:56.769Z",
+      "Cost (USD)": 0.16,
+      "API Calls": 16,
+      "Turns": 1
+    },
+    {
+      "Project": "/Users/puhengheng/pro/fe/duer/swan",
+      "Session ID": "agent-a33de2d4796f3e505",
+      "Started At": "2026-04-21T12:58:31.385Z",
+      "Cost (USD)": 0.12,
+      "API Calls": 10,
+      "Turns": 1
+    },
+    {
+      "Project": "/Users/puhengheng/pro/fe/duer/swan",
+      "Session ID": "agent-aa24f5b67e4d13dda",
+      "Started At": "2026-04-22T06:12:31.219Z",
+      "Cost (USD)": 0.12,
+      "API Calls": 8,
+      "Turns": 1
+    },
+    {
+      "Project": "Users/puhengheng/Documents/Codex/2026/05/11/new/chat",
+      "Session ID": "rollout-2026-05-11T19-29-57-019e16cd-0d36-7fd3-abe2-43784d718783",
+      "Started At": "2026-05-11T11:30:05.732Z",
+      "Cost (USD)": 0.09,
+      "API Calls": 3,
+      "Turns": 3
+    },
+    {
+      "Project": "cursor",
+      "Session ID": "unknown",
+      "Started At": "2026-04-23T07:32:16.441Z",
+      "Cost (USD)": 0.08,
+      "API Calls": 162,
+      "Turns": 162
+    },
+    {
+      "Project": "/Users/puhengheng/pro/fe/duer/swan",
+      "Session ID": "2b49288d-c8d3-489f-869c-c1c72dd42890",
+      "Started At": "2026-04-28T09:16:48.289Z",
+      "Cost (USD)": 0.06,
+      "API Calls": 4,
+      "Turns": 2
+    },
+    {
+      "Project": "/Users/puhengheng",
+      "Session ID": "30696b88-d0bc-4cf3-98aa-66d7bfb7fe25",
+      "Started At": "2026-05-11T03:11:07.160Z",
+      "Cost (USD)": 0.06,
+      "API Calls": 5,
+      "Turns": 5
+    },
+    {
+      "Project": "/Users/puhengheng/pro/////DPL/////DPL",
+      "Session ID": "10503aef-6b94-4b74-80d7-c68fdb86190a",
+      "Started At": "2026-05-13T08:42:28.986Z",
+      "Cost (USD)": 0.05,
+      "API Calls": 4,
+      "Turns": 1
+    },
+    {
+      "Project": "main",
+      "Session ID": "9951ffeb-f0bd-465b-aa3c-559f2dde83fd",
+      "Started At": "2026-05-15T01:32:44.392Z",
+      "Cost (USD)": 0.04,
+      "API Calls": 1,
+      "Turns": 1
+    },
+    {
+      "Project": "main",
+      "Session ID": "d7a8c611-3162-408b-9f20-674e1f8b1bfc",
+      "Started At": "2026-05-14T19:44:43.465Z",
+      "Cost (USD)": 0.04,
+      "API Calls": 1,
+      "Turns": 1
+    },
+    {
+      "Project": "swan",
+      "Session ID": "5b89d5d5ad6d9a23",
+      "Started At": "2026-04-29T08:01:17.256Z",
+      "Cost (USD)": 0.04,
+      "API Calls": 24,
+      "Turns": 24
+    },
+    {
+      "Project": "/Users/puhengheng/pro/createSkill/baidu/duer/fe/package",
+      "Session ID": "4c8c0a64-939a-4780-82bf-c02db5dc55b2",
+      "Started At": "2026-05-11T03:33:29.714Z",
+      "Cost (USD)": 0.03,
+      "API Calls": 1,
+      "Turns": 1
+    },
+    {
+      "Project": "Users/puhengheng/pro/createSkill/baidu/duer/fe/package",
+      "Session ID": "rollout-2026-05-11T17-36-09-019e1664-dea5-79c2-ab59-1efe4b024e9c",
+      "Started At": "2026-05-11T09:36:25.897Z",
+      "Cost (USD)": 0.02,
+      "API Calls": 2,
+      "Turns": 2
+    },
+    {
+      "Project": "Users/puhengheng/pro/copy/baidu/duer/fe/duer/swan",
+      "Session ID": "rollout-2026-05-08T16-17-27-019e06a9-bab4-7ba0-bd2c-fee9c378d581",
+      "Started At": "2026-05-08T08:17:31.063Z",
+      "Cost (USD)": 0.02,
+      "API Calls": 2,
+      "Turns": 2
+    },
+    {
+      "Project": "Users/puhengheng",
+      "Session ID": "rollout-2026-05-08T16-41-31-019e06bf-c43f-7d43-916e-b823a90baaa5",
+      "Started At": "2026-05-08T08:41:44.177Z",
+      "Cost (USD)": 0.02,
+      "API Calls": 2,
+      "Turns": 2
+    },
+    {
+      "Project": "/Users/puhengheng",
+      "Session ID": "15de046e-61e0-4707-9bc6-6ce97dbb9e1b",
+      "Started At": "2026-05-13T11:59:51.277Z",
+      "Cost (USD)": 0.02,
+      "API Calls": 1,
+      "Turns": 1
+    },
+    {
+      "Project": "/Users/puhengheng/pro/createSkill/baidu/duer/fe/package",
+      "Session ID": "b6e75f0e-6b6b-4a31-b5cd-b5d60660d1b6",
+      "Started At": "2026-05-11T03:13:04.157Z",
+      "Cost (USD)": 0.02,
+      "API Calls": 1,
+      "Turns": 1
+    },
+    {
+      "Project": "/Users/puhengheng/pro/createSkill/baidu/duer/fe/package",
+      "Session ID": "d14900eb-7692-46a1-af3a-581254597d87",
+      "Started At": "2026-05-13T10:12:45.740Z",
+      "Cost (USD)": 0.02,
+      "API Calls": 2,
+      "Turns": 1
+    },
+    {
+      "Project": "/Users/puhengheng/Library/Containers/com/tencent/xinWeChat/Data/Documents/xwechat/files/PH19931218/084b/msg/video",
+      "Session ID": "b07e1e0b-d2d5-4281-993e-30a682c406bf",
+      "Started At": "2026-05-14T11:01:23.126Z",
+      "Cost (USD)": 0.02,
+      "API Calls": 2,
+      "Turns": 1
+    },
+    {
+      "Project": "/Users/puhengheng/pro/createSkill",
+      "Session ID": "d7393ca5-29df-4cf0-8d66-cf4cd3b3fac2",
+      "Started At": "2026-05-11T03:04:16.125Z",
+      "Cost (USD)": 0.01,
+      "API Calls": 1,
+      "Turns": 1
+    },
+    {
+      "Project": "main",
+      "Session ID": "8b2938b5-7663-44bb-90da-94e3a8b2a5a9",
+      "Started At": "2026-05-18T07:45:24.851Z",
+      "Cost (USD)": 0,
+      "API Calls": 389,
+      "Turns": 389
+    },
+    {
+      "Project": "main",
+      "Session ID": "dc0e9758-5a7b-40d3-80a6-861bc378900d",
+      "Started At": "2026-05-18T00:30:16.778Z",
+      "Cost (USD)": 0,
+      "API Calls": 8,
+      "Turns": 8
+    },
+    {
+      "Project": "main",
+      "Session ID": "b653f40e-f124-4005-8ccd-52dc7edfec4a",
+      "Started At": "2026-04-28T00:48:31.221Z",
+      "Cost (USD)": 0,
+      "API Calls": 11,
+      "Turns": 11
+    },
+    {
+      "Project": "main",
+      "Session ID": "b40f33f5-d8e3-4b72-a63e-89e73d5be48b",
+      "Started At": "2026-05-18T02:00:08.131Z",
+      "Cost (USD)": 0,
+      "API Calls": 2,
+      "Turns": 2
+    },
+    {
+      "Project": "main",
+      "Session ID": "1a5e83a2-75ec-472f-90dc-25b95a77bc68",
+      "Started At": "2026-05-06T02:48:27.843Z",
+      "Cost (USD)": 0,
+      "API Calls": 9,
+      "Turns": 9
+    },
+    {
+      "Project": "main",
+      "Session ID": "fa5a6a64-f0c7-4be2-a27e-1dc1dd65b1da",
+      "Started At": "2026-05-08T07:48:26.257Z",
+      "Cost (USD)": 0,
+      "API Calls": 1,
+      "Turns": 1
+    },
+    {
+      "Project": "main",
+      "Session ID": "3d920387-3072-4072-8988-38c3a21388b6",
+      "Started At": "2026-05-17T19:30:08.863Z",
+      "Cost (USD)": 0,
+      "API Calls": 14,
+      "Turns": 14
+    },
+    {
+      "Project": "main",
+      "Session ID": "2debc901-b606-40f7-b9b4-789c1a51bd58",
+      "Started At": "2026-05-18T01:28:09.004Z",
+      "Cost (USD)": 0,
+      "API Calls": 15,
+      "Turns": 15
+    },
+    {
+      "Project": "main",
+      "Session ID": "68d537c0-9e67-4166-8838-9b9d67501f0c",
+      "Started At": "2026-05-14T02:22:12.635Z",
+      "Cost (USD)": 0,
+      "API Calls": 7,
+      "Turns": 7
+    },
+    {
+      "Project": "main",
+      "Session ID": "db61d997-7a59-4f8e-a0bc-30a6a600e0a9",
+      "Started At": "2026-05-18T01:38:04.419Z",
+      "Cost (USD)": 0,
+      "API Calls": 3,
+      "Turns": 3
+    },
+    {
+      "Project": "main",
+      "Session ID": "73333271-aa7f-4f9e-b196-f606d55ffd7d",
+      "Started At": "2026-05-15T19:30:10.933Z",
+      "Cost (USD)": 0,
+      "API Calls": 15,
+      "Turns": 15
+    },
+    {
+      "Project": "main",
+      "Session ID": "8b8b666e-def1-4279-98cd-b58fadd8306f",
+      "Started At": "2026-05-16T01:28:11.107Z",
+      "Cost (USD)": 0,
+      "API Calls": 65,
+      "Turns": 65
+    },
+    {
+      "Project": "main",
+      "Session ID": "a3697d3d-1212-44bd-803c-669eff42fe04",
+      "Started At": "2026-05-16T00:30:14.631Z",
+      "Cost (USD)": 0,
+      "API Calls": 8,
+      "Turns": 8
+    },
+    {
+      "Project": "main",
+      "Session ID": "a8a8a865-6726-49ea-af41-476dc2bee223",
+      "Started At": "2026-05-17T00:30:08.675Z",
+      "Cost (USD)": 0,
+      "API Calls": 10,
+      "Turns": 10
+    },
+    {
+      "Project": "main",
+      "Session ID": "cc8c6bb6-d4a0-4380-bb94-0f3d99d831e1",
+      "Started At": "2026-05-17T01:28:08.258Z",
+      "Cost (USD)": 0,
+      "API Calls": 76,
+      "Turns": 76
+    },
+    {
+      "Project": "main",
+      "Session ID": "e125f292-c668-4b28-ae0e-5da018eee18b",
+      "Started At": "2026-05-16T19:30:07.535Z",
+      "Cost (USD)": 0,
+      "API Calls": 17,
+      "Turns": 17
+    },
+    {
+      "Project": "swan",
+      "Session ID": "1ae9bf6b9a9b5b24",
+      "Started At": "2026-04-23T07:57:18.413Z",
+      "Cost (USD)": 0,
+      "API Calls": 3,
+      "Turns": 3
+    },
+    {
+      "Project": "swan",
+      "Session ID": "f79b1f31eabd4745",
+      "Started At": "2026-04-27T07:41:28.058Z",
+      "Cost (USD)": 0,
+      "API Calls": 1,
+      "Turns": 1
+    },
+    {
+      "Project": "h5",
+      "Session ID": "56b472d01b1d46a4",
+      "Started At": "2026-04-28T06:21:48.067Z",
+      "Cost (USD)": 0,
+      "API Calls": 1,
+      "Turns": 1
+    }
+  ],
+  "tools": [
+    {
+      "Tool": "Bash",
+      "Calls": 2972,
+      "Share (%)": 77.07
+    },
+    {
+      "Tool": "Edit",
+      "Calls": 157,
+      "Share (%)": 4.07
+    },
+    {
+      "Tool": "write_stdin",
+      "Calls": 153,
+      "Share (%)": 3.97
+    },
+    {
+      "Tool": "Read",
+      "Calls": 137,
+      "Share (%)": 3.55
+    },
+    {
+      "Tool": "Grep",
+      "Calls": 58,
+      "Share (%)": 1.5
+    },
+    {
+      "Tool": "message",
+      "Calls": 56,
+      "Share (%)": 1.45
+    },
+    {
+      "Tool": "process",
+      "Calls": 55,
+      "Share (%)": 1.43
+    },
+    {
+      "Tool": "update_plan",
+      "Calls": 35,
+      "Share (%)": 0.91
+    },
+    {
+      "Tool": "gateway",
+      "Calls": 29,
+      "Share (%)": 0.75
+    },
+    {
+      "Tool": "web_fetch",
+      "Calls": 27,
+      "Share (%)": 0.7
+    },
+    {
+      "Tool": "get_figma_data",
+      "Calls": 22,
+      "Share (%)": 0.57
+    },
+    {
+      "Tool": "cursor:readfile",
+      "Calls": 21,
+      "Share (%)": 0.54
+    },
+    {
+      "Tool": "sessions_list",
+      "Calls": 15,
+      "Share (%)": 0.39
+    },
+    {
+      "Tool": "Write",
+      "Calls": 15,
+      "Share (%)": 0.39
+    },
+    {
+      "Tool": "memory_search",
+      "Calls": 14,
+      "Share (%)": 0.36
+    },
+    {
+      "Tool": "_get_metadata",
+      "Calls": 11,
+      "Share (%)": 0.29
+    },
+    {
+      "Tool": "_get_design_context",
+      "Calls": 10,
+      "Share (%)": 0.26
+    },
+    {
+      "Tool": "web_search",
+      "Calls": 10,
+      "Share (%)": 0.26
+    },
+    {
+      "Tool": "cursor:rg",
+      "Calls": 7,
+      "Share (%)": 0.18
+    },
+    {
+      "Tool": "session_status",
+      "Calls": 6,
+      "Share (%)": 0.16
+    },
+    {
+      "Tool": "_whoami",
+      "Calls": 5,
+      "Share (%)": 0.13
+    },
+    {
+      "Tool": "list_mcp_resources",
+      "Calls": 4,
+      "Share (%)": 0.1
+    },
+    {
+      "Tool": "Glob",
+      "Calls": 4,
+      "Share (%)": 0.1
+    },
+    {
+      "Tool": "cursor:applypatch",
+      "Calls": 4,
+      "Share (%)": 0.1
+    },
+    {
+      "Tool": "read_mcp_resource",
+      "Calls": 2,
+      "Share (%)": 0.05
+    },
+    {
+      "Tool": "_use_figma",
+      "Calls": 2,
+      "Share (%)": 0.05
+    },
+    {
+      "Tool": "tts",
+      "Calls": 2,
+      "Share (%)": 0.05
+    },
+    {
+      "Tool": "nodes",
+      "Calls": 2,
+      "Share (%)": 0.05
+    },
+    {
+      "Tool": "_get_screenshot",
+      "Calls": 2,
+      "Share (%)": 0.05
+    },
+    {
+      "Tool": "Agent",
+      "Calls": 2,
+      "Share (%)": 0.05
+    },
+    {
+      "Tool": "TaskUpdate",
+      "Calls": 2,
+      "Share (%)": 0.05
+    },
+    {
+      "Tool": "evaluate_script",
+      "Calls": 2,
+      "Share (%)": 0.05
+    },
+    {
+      "Tool": "AskUserQuestion",
+      "Calls": 2,
+      "Share (%)": 0.05
+    },
+    {
+      "Tool": "request_plugin_install",
+      "Calls": 1,
+      "Share (%)": 0.03
+    },
+    {
+      "Tool": "sessions_spawn",
+      "Calls": 1,
+      "Share (%)": 0.03
+    },
+    {
+      "Tool": "sessions_yield",
+      "Calls": 1,
+      "Share (%)": 0.03
+    },
+    {
+      "Tool": "TaskCreate",
+      "Calls": 1,
+      "Share (%)": 0.03
+    },
+    {
+      "Tool": "Skill",
+      "Calls": 1,
+      "Share (%)": 0.03
+    },
+    {
+      "Tool": "list_pages",
+      "Calls": 1,
+      "Share (%)": 0.03
+    },
+    {
+      "Tool": "navigate_page",
+      "Calls": 1,
+      "Share (%)": 0.03
+    },
+    {
+      "Tool": "take_snapshot",
+      "Calls": 1,
+      "Share (%)": 0.03
+    },
+    {
+      "Tool": "cursor:shell",
+      "Calls": 1,
+      "Share (%)": 0.03
+    },
+    {
+      "Tool": "cursor:strreplace",
+      "Calls": 1,
+      "Share (%)": 0.03
+    },
+    {
+      "Tool": "cursor:todowrite",
+      "Calls": 1,
+      "Share (%)": 0.03
+    }
+  ],
+  "shellCommands": [
+    {
+      "Command": "#",
+      "Calls": 404,
+      "Share (%)": 23.26
+    },
+    {
+      "Command": "head",
+      "Calls": 296,
+      "Share (%)": 17.04
+    },
+    {
+      "Command": "grep",
+      "Calls": 212,
+      "Share (%)": 12.2
+    },
+    {
+      "Command": "python3",
+      "Calls": 168,
+      "Share (%)": 9.67
+    },
+    {
+      "Command": "tail",
+      "Calls": 102,
+      "Share (%)": 5.87
+    },
+    {
+      "Command": "echo",
+      "Calls": 86,
+      "Share (%)": 4.95
+    },
+    {
+      "Command": "cat",
+      "Calls": 79,
+      "Share (%)": 4.55
+    },
+    {
+      "Command": "ls",
+      "Calls": 66,
+      "Share (%)": 3.8
+    },
+    {
+      "Command": "openclaw",
+      "Calls": 60,
+      "Share (%)": 3.45
+    },
+    {
+      "Command": "npm",
+      "Calls": 36,
+      "Share (%)": 2.07
+    },
+    {
+      "Command": "find",
+      "Calls": 26,
+      "Share (%)": 1.5
+    },
+    {
+      "Command": "npx",
+      "Calls": 26,
+      "Share (%)": 1.5
+    },
+    {
+      "Command": "curl",
+      "Calls": 18,
+      "Share (%)": 1.04
+    },
+    {
+      "Command": "codeburn",
+      "Calls": 15,
+      "Share (%)": 0.86
+    },
+    {
+      "Command": "adb",
+      "Calls": 13,
+      "Share (%)": 0.75
+    },
+    {
+      "Command": "sed",
+      "Calls": 11,
+      "Share (%)": 0.63
+    },
+    {
+      "Command": "wc",
+      "Calls": 10,
+      "Share (%)": 0.58
+    },
+    {
+      "Command": "sleep",
+      "Calls": 9,
+      "Share (%)": 0.52
+    },
+    {
+      "Command": "which",
+      "Calls": 6,
+      "Share (%)": 0.35
+    },
+    {
+      "Command": "bash",
+      "Calls": 6,
+      "Share (%)": 0.35
+    },
+    {
+      "Command": "do",
+      "Calls": 5,
+      "Share (%)": 0.29
+    },
+    {
+      "Command": "env",
+      "Calls": 5,
+      "Share (%)": 0.29
+    },
+    {
+      "Command": "tr",
+      "Calls": 4,
+      "Share (%)": 0.23
+    },
+    {
+      "Command": "git",
+      "Calls": 4,
+      "Share (%)": 0.23
+    },
+    {
+      "Command": "null",
+      "Calls": 4,
+      "Share (%)": 0.23
+    },
+    {
+      "Command": "\"",
+      "Calls": 4,
+      "Share (%)": 0.23
+    },
+    {
+      "Command": "sort",
+      "Calls": 4,
+      "Share (%)": 0.23
+    },
+    {
+      "Command": "for",
+      "Calls": 3,
+      "Share (%)": 0.17
+    },
+    {
+      "Command": "networksetup",
+      "Calls": 3,
+      "Share (%)": 0.17
+    },
+    {
+      "Command": "while",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "cut",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "then",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "ps",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "e.message))\"",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "launchctl",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "export",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "})",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "console.error(\"\\[weixin-api-DEBUG\\]",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "process.stderr.write(\"[weixin-DEBUG]",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "s",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "'",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "}",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "type",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "command",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "\\",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "codex",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "printenv",
+      "Calls": 2,
+      "Share (%)": 0.12
+    },
+    {
+      "Command": "xargs",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "人工智能",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "大模型",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "GPT",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "Claude",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "OpenAI",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "Gemini",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "DeepSeek",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "LLM",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "a>',html,re.I)",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "-c",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "package.json'))['version'])",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "unzip",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "cp",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "stat",
+      "Calls": 1,
+      "Share (%)": 0.06
+    },
+    {
+      "Command": "set(demo_comps.keys())",
+      "Calls": 1,
+      "Share (%)": 0.06
+    }
+  ]
+}
