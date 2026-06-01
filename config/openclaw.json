@@ -362,12 +362,35 @@
   },
   "agents": {
     "defaults": {
-      "model": "oneapi/DeepSeek-V4-Pro",
+      "model": {
+        "primary": "oneapi/gpt-5.5",
+        "fallbacks": [
+          "oneapi/gpt-5.5",
+          "oneapi/GLM-5-Turbo",
+          "oneapi/GLM-5",
+          "oneapi/Claude Haiku 4.5",
+          "oneapi/Claude Sonnet 4.5",
+          "oneapi/Claude Sonnet 4.6",
+          "oneapi/Claude Opus 4.5",
+          "oneapi/Claude Opus 4.6",
+          "oneapi/Kimi-K2.5",
+          "oneapi/MiniMax-M2.1",
+          "oneapi/MiniMax-M2.5",
+          "oneapi/MiniMax-M2.7",
+          "oneapi/MiniMax-M2-Stable",
+          "oneapi/DeepSeek-V4-Flash",
+          "oneapi/DeepSeek-V4-Pro",
+          "oneapi/Kimi-K2.6",
+          "oneapi/GLM-5.1",
+          "oneapi/gpt-5.4",
+          "oneapi/gpt-5.3-codex"
+        ]
+      },
       "workspace": "~/.openclaw/workspace",
       "compaction": {
         "mode": "safeguard"
       },
-      "imageModel": "oneapi/MiniMax-M2.7"
+      "imageModel": "oneapi/gpt-5.5"
     }
   },
   "tools": {

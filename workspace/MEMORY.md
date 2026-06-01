@@ -11,6 +11,7 @@
 8. **图片识别失败自动换模型** — 配置里的 input 字段不一定准确。要根据自己对模型能力的了解来判断哪些真正支持 vision，然后逐个尝试，找到能用的就改配置文件。**实测结果（2026-04-08 OneAPI）：MiniMax-M2.1 ✅ | MiniMax-M2.5 ✅ | MiniMax-M2.7 ✅ | Claude Haiku 4.5 ❌（ARN映射缺失）| Claude Sonnet 4.6 ❌（base64转换失败）| Claude Opus 4.6 ❌ | GLM-5-Turbo ❌ | GLM-5 ❌ | Kimi-K2.5 ❌ | MiniMax-M2-Stable ❌（负载高）| 智谱Coding Plan ❌（无视觉模型）。当前 imageModel = oneapi/MiniMax-M2.7
 9. **OpenClaw 新版本直接更新** — 老大说之后有新版本不用问，直接帮他更新就行（2026-04-17）
 10. **对话期间暂停所有定时任务** — 当老大正在跟我对话时（主会话有活跃消息往来），所有 cron 定时任务和心跳检查任务暂停执行，等对话结束后再恢复（2026-05-15）
+11. **新闻早报必须验证** — 每条入选早报的新闻必须经过验证流程（红旗信号扫描 → 交叉验证 → 官方溯源），详见 HEARTBEAT.md 和 news-verification-checklist.md。宁可少发，不发假新闻（2026-05-27）
 
 ## 教训
 
