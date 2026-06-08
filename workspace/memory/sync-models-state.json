@@ -1,4 +1,4 @@
 {
-  "lastSyncTime": "2026-05-29T11:17:00+08:00",
-  "lastResult": "API返回18个模型，本地19个。无新增模型。API缺失MiniMax-M2.5（仅报告不删除）。配置已是最新。"
+  "lastSyncTime": "2026-07-06T07:47:00+08:00",
+  "lastResult": "API返回16个模型，本地19个。新发现MiniMax-M3但脚本未自动添加。"
 }

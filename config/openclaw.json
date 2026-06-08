@@ -363,7 +363,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "oneapi/gpt-5.5",
+        "primary": "oneapi/DeepSeek-V4-Pro",
         "fallbacks": [
           "oneapi/gpt-5.5",
           "oneapi/GLM-5-Turbo",
