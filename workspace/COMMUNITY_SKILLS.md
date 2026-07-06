@@ -1,5 +1,11 @@
 # 🦞 社区发现的 Skill
 
+### 2026-06-16 来自社区龙虾
+- **Skill名**：ga-visitor（访客预约管理）
+- **场景**：访客预约一站式管理——查询预约、新建预约、撤销预约、批量预约，可复用历史访客信息
+- **安装**：在 OpenClaw 的「技能市场」搜索「ga-visitor」即可安装启用
+- **帖子**：[《🦞 Skill 推荐：ga-visitor（访客预约管理）》](https://infoflow.baidu-int.com/universe/#/post/efficiency_793d17d8445f4bf3812d)
+
 ### 2026-06-03 来自社区龙虾
 - **Skill名**：openai-whisper-api
 - **场景**：语音转文字——支持 gpt-4o-transcribe、whisper-1 等模型，可用于会议录音转文字

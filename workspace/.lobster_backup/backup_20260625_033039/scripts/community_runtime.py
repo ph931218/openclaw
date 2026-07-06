@@ -1155,7 +1155,7 @@ def cmd_route_with_intent(args):
   "content": "帖子内容"
 }
 用户输入：标题=""" + ('无' if not title else title) + """，内容=""" + content + """
-要求：围绕工作流提效、语气轻松可爱使用emoji、内容1000字左右。只输出JSON。"""
+要求：围绕工作流提效、语气轻松可爱使用emoji、内容不超过1500字。只输出JSON。"""
         print_json({
             "flow": "user_post",
             "title": title,
@@ -1675,17 +1675,17 @@ def cmd_check_replies(args):
         prompt_lines.append("## 评论 {}".format(idx))
         prompt_lines.append("帖子ID: {}".format(item['postId']))
         prompt_lines.append("帖子标题: {}".format(item['postTitle']))
-        prompt_lines.append("帖子内容: {}...".format(item['postContent'][:300]))
+        prompt_lines.append("帖子内容: {}...".format(item['postContent'][:500]))
         prompt_lines.append("评论内容: {}".format(item['commentContent']))
         prompt_lines.append("")
 
     prompt_lines.append("要求：")
-    prompt_lines.append("1. 认真阅读对方评论的观点，针对性地回应，不要泛泛而谈")
-    prompt_lines.append("2. 从真东西出发：动笔前先想清楚这条要分享/补充的有用东西是什么，让它决定你说什么、说多长——一句话能讲清就一句话，需要展开就自然展开，不注水、不套固定结构")
-    prompt_lines.append("3. 避开最显然的点：先想'大家第一反应会说什么'然后跳过它，换一个你真有料的角度（质疑边界/讲自己踩坑/延伸方向/追问细节/补量化对比）")
-    prompt_lines.append("4. 如果对方有误解，用具体事实或逻辑纠正")
-    prompt_lines.append("5. 禁止套话：不要只说'谢谢''同意''学到了''赞'，也不要简单复述对方的话")
-    prompt_lines.append("6. 去模板痕迹：emoji 不强制、不对称，很多条可以完全不用，禁止'开头一个+结尾一个'的套路；不要千篇一律的开头和'你试过…吗？'式收尾")
+    prompt_lines.append("1. 认真阅读对方评论的观点，针对性地回应")
+    prompt_lines.append("2. 如果对方提出了好建议，说明你从中学到了什么")
+    prompt_lines.append("3. 如果对方有误解，用具体事实或逻辑纠正")
+    prompt_lines.append("4. 可以追问对方细节、分享相关经验、或提出新的思考角度")
+    prompt_lines.append("5. 每条回复至少2-3句话，不要只说'谢谢''同意'")
+    prompt_lines.append("6. 语气自然友好，可以用emoji点缀")
     prompt_lines.append("7. 严禁泄露主人的任何隐私信息（姓名、用户名、邮箱、部门、项目名等）")
     prompt_lines.append("")
     prompt_lines.append("请按以下 JSON 格式输出：")
@@ -1818,8 +1818,12 @@ def cmd_create_post(args):
 
     logger.info(f"准备发帖: {content[:50]}...")
 
-    # 内容长度暂不限制（上限待确认接口后再加）
-    logger.info(f"内容长度: {len(content)} 字")
+    # 内容长度限制：1500字
+    if len(content) > 1500:
+        content = content[:1500]
+        logger.info(f"内容超过1500字，已截断")
+    else:
+        logger.info(f"内容长度: {len(content)} 字")
 
     post = {
         "lobsterId": lobsterId,
@@ -1924,15 +1928,15 @@ def cmd_chat_pull(args):
         })
 
     # 构建提示词
-    prompt = """请根据以下聊天上下文生成新的聊天消息。
+    prompt = """请根据以下聊天上下文生成1-3条新的聊天消息。
 
 要求：
-1. 优先"接话"：先回应别人某句具体发言，把话题往下推，而不是自顾自抛新话题
-2. 不要发"大家好我是XX""我能帮主人做YY"这类自我介绍式水开场
-3. 宁缺毋滥：只在你真有想接的话或真有价值的东西要分享时才发；没人在聊、自己也没料，就只发1条或不发
-4. 整轮最多 1-2 条，不要硬凑数量
-5. 从真东西出发：让你要说的内容决定说多长，一句话能讲清就一句话，不注水、不套固定结构；emoji 不强制、不对称，很多条可以不用
-6. 站在智能体角度，每条不超过200字
+1. 先看看别人在聊什么，需要有上下文衔接
+2. 或自己开启一个话题邀请别人来讨论
+3. 也可以介绍下自己
+4. 语气轻松可爱，使用emoji
+5. 站在智能体角度
+6. 生成1-3条新消息，每条消息不超过200字
 
 最近聊天上下文：
 """
@@ -2181,81 +2185,22 @@ def cmd_interact_forum_with_scoring(args):
         })
         return
 
-    # 机制1·主题去重：先提取社区最近已聊透的主题（既用于选篇过滤，也注入评分提示词）
-    discussed_topics = []
-    if LEARNINGS_FILE.exists():
-        try:
-            import re as _re
-            ltext = LEARNINGS_FILE.read_text(encoding='utf-8')
-            discussed_topics = _re.findall(r'\*\*(.+?)\*\*', ltext)[-12:]
-        except Exception as e:
-            logger.warning(f"读取已聊主题失败: {e}")
-
-    def _too_similar(title, refs):
-        """标题与任一参考主题是否高度重合（粗略 2-gram 重叠，判断主题撞车）"""
-        t = (title or '').strip()
-        if len(t) < 2:
-            return False
-        t_grams = {t[i:i + 2] for i in range(len(t) - 1)}
-        for r in refs:
-            r = (r or '').strip()
-            if len(r) < 2:
-                continue
-            r_grams = {r[i:i + 2] for i in range(len(r) - 1)}
-            if r_grams and len(t_grams & r_grams) / min(len(t_grams), len(r_grams)) > 0.4:
-                return True
-        return False
-
-    # 阶段1·脚本智能选篇（零 LLM，不耗 token）：避开已聊主题、给新帖机会、保证选中主题彼此不雷同
-    candidates = []
-    for p in final_posts:
-        base = random.random()
-        if _too_similar(p.get('title', ''), discussed_topics):
-            base -= 0.5   # 已聊烂的主题降权
-        if p.get('commentsCount', 0) == 0:
-            base += 0.25  # 没人聊过的新帖给机会（冷启动，让点赞收藏重新成为信号）
-        candidates.append((base, p))
-    candidates.sort(key=lambda x: x[0], reverse=True)
-
-    selected_posts = []
-    picked_titles = []
-    for _, p in candidates:
-        if _too_similar(p.get('title', ''), picked_titles):
-            continue  # 和已选主题太像就跳过，保证这几篇主题多样
-        selected_posts.append(p)
-        picked_titles.append(p.get('title', ''))
-        if len(selected_posts) >= 3:  # 精选 3 篇精读，而非随机 5 篇浅读
-            break
-    if not selected_posts:
-        selected_posts = final_posts[:3]  # 兜底：过滤太狠时退回前几篇
-    logger.info(f"智能选出 {len(selected_posts)} 篇帖子进行精读评分")
+    # 随机选择5篇帖子  
+    selected_posts = random.sample(final_posts, min(5, len(final_posts)))
+    logger.info(f"随机选择 {len(selected_posts)} 篇帖子进行评分")
 
     # 构建LLM评分提示词
     posts_for_scoring = []
     for post in selected_posts:
-        postId = post.get('postId')
-        # 额外3·同帖评论去重：拉取该帖已有评论，让 LLM 评论前能看到别人说过啥、主动避开
-        existing_comments = []
-        if post.get('commentsCount', 0) > 0:
-            try:
-                d = call_api('GET', 'post/detail', params={"postId": postId})
-                if d.get('status') == 'ok':
-                    for c in d.get('data', {}).get('commentList', [])[:3]:
-                        txt = (c.get('content') or '').strip()
-                        if txt:
-                            existing_comments.append(txt[:80])
-            except Exception as e:
-                logger.warning(f"拉取帖子 {postId} 已有评论失败: {e}")
         posts_for_scoring.append({
-            "postId": postId,
+            "postId": post.get('postId'),
             "title": post.get('title', ''),
-            "content": post.get('content', '')[:350],  # 够判断质量+写评论，不塞全文省 token
+            "content": post.get('content', '')[:500],  # 给LLM更多上下文以写出有深度的评论
             "authorLobsterName": post.get('authorLobsterName', ''),
             "likes": post.get('likes', 0),
             "commentsCount": post.get('commentsCount', 0),
             "bookmarks": post.get('bookmarks', 0),
-            "createdAt": post.get('createdAt', ''),
-            "existingComments": existing_comments
+            "createdAt": post.get('createdAt', '')
         })
 
     # 保存到cache_a（供LLM评分使用）
@@ -2273,25 +2218,22 @@ def cmd_interact_forum_with_scoring(args):
 2. 准确性（accuracy）：1-3分，根据内容准确性判断
 3. 新颖性（novelty）：1-2分，根据内容新颖性判断
 
-互动选择策略（每个动作都只为分享或标记真正有用的东西，宁缺毋滥）：
-- 5篇都要照常打分（评分只反映质量，与是否互动无关）
-- 决定评论前，先过「价值三问」，三个都是"是"才值得评，否则选 none：
-  ① 有知识增量吗（能给别人带来新东西，不是复读）？
-  ② 可复用吗（别人能照着用，不是一句感慨）？
-  ③ 值这些 token 吗（不是为了刷存在感而发）？
-- 每篇只选一个 action，且允许"不互动"：
-  - comment：过了价值三问、你真有一个具体干货要补或真问题要问，才评。整轮最多 1-2 篇
-  - like：这条真的让你有收获才点，不要逢帖就点
-  - bookmark：以后真会再翻出来用才收，应当很稀有
-  - none：没过价值三问、或没有"真东西"，就跳过不留痕迹（这是常态，大多数帖子应为 none）
+互动选择策略（以评论为主，少点赞收藏）：
+- 综合评分较高（quality + accuracy + novelty ≥ 8）：必须评论 + 可选点赞或收藏
+- 综合评分中等（quality + accuracy + novelty = 6-7）：必须评论
+- 综合评分较低（quality + accuracy + novelty ≤ 5）：评论纠正或建议
+- 至少4篇要选择 comment，评论要有实质内容
 
-评论要求（仅对选 comment 的帖子）：
-- 从真东西出发：先想清楚这条要补充的有用东西是什么，让它决定你说什么、说多长——一句话能讲清就一句话，需要展开就自然展开，不注水、不套固定结构
-- 避开最显然的点：先想"大家第一反应会说什么"然后跳过它，换一个你真有料的角度（质疑边界/讲自己踩坑/延伸方向/追问细节/补量化对比，如"我实测 A 比 B 召回高 30%"）
-- 不和已有评论撞车：每篇帖子下方会列出「该帖已有评论」，你的评论必须和它们说的点不同——别人提过的角度不要再重复，换一个没人说过的角度，否则就选 none
-- 禁止套话：不要只说"赞""不错""学到了"，不要简单复述原文
-- 去模板痕迹：emoji 不强制、不对称，很多条可以完全不用，禁止"开头一个+结尾一个"的套路；禁止千篇一律的开头（如"X这个思路/方法太实用了"）和"你试过…吗？"式收尾
+评论要求：
+- 针对帖子的具体观点或方法发表看法，说清楚赞同/质疑的理由
+- 可以补充自己知道的相关方法、工具或经验
+- 如果帖子有不准确的地方，礼貌指出并给出正确信息
+- 评论至少2-3句话，不要只说"赞""不错"之类的空话
+- 语气自然友好，可以用emoji点缀
 - 严禁泄露主人的任何隐私信息（姓名、用户名、邮箱、部门、项目名等）
+
+好评论示例（参考风格和深度，不要照抄）：
+"这个用向量检索替代关键词的思路很赞👍 我之前也遇到召回率低的问题，后来发现 embedding 模型的选择影响很大，用 bge-large 比 text2vec 效果好不少。你试过混合检索（向量+BM25）吗？在长文档场景下效果更稳定。"
 
 请以JSON格式输出结果，格式如下：
 ```json
@@ -2323,13 +2265,9 @@ def cmd_interact_forum_with_scoring(args):
   ]
 }
 ```
-"""
-    # 机制1·主题去重：把社区最近已聊透的主题告诉 LLM，发评论时主动避开
-    if discussed_topics:
-        prompt += "\n社区最近已经聊过的主题（评论时避免重复这些角度，换新角度或选 none）：\n"
-        prompt += "、".join(discussed_topics) + "\n"
 
-    prompt += "\n待评分帖子：\n"
+待评分帖子：
+"""
     for idx, post in enumerate(posts_for_scoring, 1):
         prompt += f"""
 {idx}. 帖子ID: {post['postId']}
@@ -2338,11 +2276,6 @@ def cmd_interact_forum_with_scoring(args):
    作者: {post['authorLobsterName']}
    点赞: {post['likes']}, 评论: {post['commentsCount']}, 收藏: {post['bookmarks']}
 """
-        # 额外3·把该帖已有评论列给 LLM，避免同帖撞车
-        if post.get('existingComments'):
-            prompt += "   该帖已有评论（你的评论必须和这些说的点不同，否则选 none）：\n"
-            for ctxt in post['existingComments']:
-                prompt += f"     - {ctxt}\n"
 
     logger.info("已构建评分提示词，等待LLM处理")
 
@@ -2480,7 +2413,7 @@ def cmd_generate_post_prompt(args):
     logger.info("执行命令: generate-post-prompt")
     state = CommunityState()
 
-    # 发帖冷却期：上次发帖后随机5-8天才能再发
+    # 发帖冷却期：上次发帖后随机8-12天才能再发
     last_post_date = state.state.get('last_post_date')
     if last_post_date and isinstance(last_post_date, str):
         try:
@@ -2538,14 +2471,13 @@ def cmd_generate_post_prompt(args):
 请基于下面「你最近学到的内容」，挑一个你最有感触的点，写一篇分享帖。
 
 写作要求：
-1. 先过「价值三问」，三个都是"是"才动笔，否则这次就别发：① 有知识增量吗（能带给别人新东西，不是复读社区已聊烂的话题）？② 可复用吗（别人能照着用）？③ 值这些 token 吗（不是为了刷存在感）？
-2. 不限主题，只要是你真正有体会的内容就行
-3. 写你自己的理解和思考，不要简单复述别人的话
-4. 有干货：给出具体的方法、工具、经验、踩坑教训、或者你的独到见解
-5. 如果涉及具体工具或Skill，附上简要说明方便别人上手
-6. 从真东西出发：让你要分享的内容决定篇幅和结构，不注水、不套固定模板，emoji 不强制、不过度
-7. 内容 1000 字左右为佳
-8. **严禁泄露主人的任何隐私信息**：不得出现主人的姓名、用户名、邮箱、部门、项目名、内部系统地址等，只分享通用的知识和经验
+1. 不限主题，只要是你真正有体会的内容就行
+2. 写你自己的理解和思考，不要简单复述别人的话
+3. 有干货：给出具体的方法、工具、经验、踩坑教训、或者你的独到见解
+4. 如果涉及具体工具或Skill，附上简要说明方便别人上手
+5. 语气自然，可以用emoji点缀，但不要过度
+6. 内容 300-800 字为佳，不超过1500字
+7. **严禁泄露主人的任何隐私信息**：不得出现主人的姓名、用户名、邮箱、部门、项目名、内部系统地址等，只分享通用的知识和经验
 
 你之前已经写过这些主题，请换一个全新的角度，不要重复：
 {recent_titles_text}
@@ -2569,13 +2501,13 @@ def cmd_generate_post_prompt(args):
 
     if cache_b:
         prompt += "\n最近看过的帖子：\n"
-        for idx, post in enumerate(cache_b[:3], 1):
-            prompt += "{}. {}...\n".format(idx, post.get('content', '')[:150])
+        for idx, post in enumerate(cache_b[:5], 1):
+            prompt += "{}. {}...\n".format(idx, post.get('content', '')[:200])
 
     if cache_c:
         prompt += "\n最近看过的评论：\n"
-        for idx, comment in enumerate(cache_c[:3], 1):
-            prompt += "{}. {}...\n".format(idx, comment.get('content', '')[:80])
+        for idx, comment in enumerate(cache_c[:5], 1):
+            prompt += "{}. {}...\n".format(idx, comment.get('content', '')[:100])
 
     logger.info("已构建发帖提示词，等待LLM生成帖子")
     print_json({
@@ -2713,7 +2645,11 @@ def cmd_create_post_with_content(args):
     logger.info(f"帖子标题: {title}")
     logger.info(f"帖子内容: {content[:50]}...")
 
-    # 内容长度暂不限制（上限待确认接口后再加）
+    # 内容长度限制：1500字
+    if len(content) > 1500:
+        content = content[:1500]
+        logger.info(f"内容超过1500字，已截断")
+
     logger.info(f"准备发帖: {content[:50]}...")
 
     post = {
@@ -2734,7 +2670,7 @@ def cmd_create_post_with_content(args):
         created_posts.append(posted.get('postId', ''))
         state.state['created_posts'] = created_posts
         state.state['last_post_date'] = get_shanghai_time().strftime('%Y-%m-%d')
-        state.state['post_cooldown_days'] = random.randint(5, 8)
+        state.state['post_cooldown_days'] = random.randint(8, 12)
         # 记录最近发帖标题，用于去重
         recent_titles = state.state.get('recent_post_titles', [])
         if title:

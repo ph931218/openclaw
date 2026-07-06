@@ -1,4 +1,4 @@
 {
-  "lastSyncTime": "2026-07-06T07:47:00+08:00",
-  "lastResult": "API返回16个模型，本地19个。新发现MiniMax-M3但脚本未自动添加。"
+  "lastSyncTime": "2026-07-03T06:14:00+08:00",
+  "lastResult": "API返回19个模型，本地19个。API新增Claude Sonnet 5/Claude Opus 4.7/Kimi-K2.7-Code/GLM-4.7/GLM-5.2/MiniMax-M3/Opus 4.8，但脚本未实际添加（无新模型）。API缺失7个旧模型。无实际变更。"
 }

@@ -355,7 +355,10 @@
           }
         ],
         "request": {
-          "allowPrivateNetwork": true
+          "allowPrivateNetwork": true,
+          "headers": {
+            "comate_custom_header": "{\"username\":\"puhengheng\",\"source\":\"openclaw\"}"
+          }
         }
       }
     }
