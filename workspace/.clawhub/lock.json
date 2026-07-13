@@ -28,6 +28,14 @@
     "rss-ai-reader": {
       "version": "1.0.0",
       "installedAt": 1775811182450
+    },
+    "baidu-search-pro": {
+      "version": "1.0.1",
+      "installedAt": 1783394541832
+    },
+    "realtime-web-search": {
+      "version": "1.0.1",
+      "installedAt": 1783394601303
     }
   }
 }
