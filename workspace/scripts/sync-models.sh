@@ -75,8 +75,9 @@ if [ -n "$NEW_MODELS" ]; then
     echo ""
     echo "=== 执行安全合并 ==="
 
-    echo "$NEW_MODELS" | sed '/^$/d' | python3 - "$CONFIG_FILE" > "$TMP_FILE.out" << PYEOF
+    NEW_MODELS_LIST="$(echo "$NEW_MODELS" | sed '/^$/d')" python3 - "$CONFIG_FILE" > "$TMP_FILE.out" << 'PYEOF'
 import json, sys
+import os
 
 config_path = sys.argv[1]
 with open(config_path) as f:
@@ -85,8 +86,8 @@ with open(config_path) as f:
 models = config['models']['providers']['oneapi']['models']
 existing_ids = {m['id'] for m in models}
 
-# 从 stdin 读取新模型 ID
-new_ids = [line for line in sys.stdin.read().strip().split('\n') if line and line not in existing_ids]
+# 从环境变量读取新模型 ID，避免 stdin 被 heredoc 占用
+new_ids = [line for line in os.environ.get('NEW_MODELS_LIST', '').split('\n') if line and line not in existing_ids]
 
 if not new_ids:
     json.dump(config, sys.stdout, indent=2, ensure_ascii=False)
@@ -111,7 +112,7 @@ json.dump(config, sys.stdout, indent=2, ensure_ascii=False)
 print(f'\n共新增 {len(new_ids)} 个模型', file=sys.stderr)
 PYEOF
     # 校验输出是合法 JSON
-    python3 -c "json.load(open('$TMP_FILE.out'))" || { echo "ERROR: 输出不是合法 JSON，放弃更新"; rm -f "$TMP_FILE.out"; exit 1; }
+    python3 -c "import json; json.load(open('$TMP_FILE.out'))" || { echo "ERROR: 输出不是合法 JSON，放弃更新"; rm -f "$TMP_FILE.out"; exit 1; }
 
     # 原子替换
     cp "$TMP_FILE.out" "$CONFIG_FILE"

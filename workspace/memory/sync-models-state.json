@@ -1,4 +1,4 @@
 {
-  "lastSyncTime": "2026-07-08T15:19:00+08:00",
-  "lastResult": "手动同步：移除8个下线模型，新增7个，共18个模型"
+  "lastSyncTime": "2026-07-15T17:14:00+08:00",
+  "lastResult": "OneAPI新增5个模型（gpt-5.6-terra/5.6-luna/5.6-sol, Fable 5, grok-4.5），但脚本未成功添加，需手动检查"
 }

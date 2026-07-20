@@ -1,28 +1,28 @@
 {
-  "lastSyncAt": "2026-07-13T10:00:47+0800",
+  "lastSyncAt": "2026-07-20T10:00:15+0800",
   "files": [
     {
       "path": "config/openclaw.json",
       "source": "~/.openclaw/openclaw.json",
-      "sourceMtime": "2026-07-13T10:00:47+0800",
+      "sourceMtime": "2026-07-20T10:00:15+0800",
       "note": "主配置（已脱敏）"
     },
     {
       "path": "config/.env",
       "source": "~/.openclaw/.env",
-      "sourceMtime": "2026-07-13T10:00:47+0800",
+      "sourceMtime": "2026-07-20T10:00:15+0800",
       "note": "环境变量（已脱敏）"
     },
     {
       "path": "workspace/",
       "source": "~/.openclaw/workspace/",
-      "sourceMtime": "2026-07-13T10:00:47+0800",
+      "sourceMtime": "2026-07-20T10:00:15+0800",
       "note": "AI 助手工作区"
     },
     {
       "path": "scripts/sync-models.sh",
       "source": "~/.openclaw/workspace/scripts/sync-models.sh",
-      "sourceMtime": "2026-07-13T10:00:47+0800",
+      "sourceMtime": "2026-07-20T10:00:15+0800",
       "note": "模型同步脚本"
     }
   ]
