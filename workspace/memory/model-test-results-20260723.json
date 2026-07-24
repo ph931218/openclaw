@@ -1,0 +1,112 @@
+[
+  {
+    "model": "gpt-5.5",
+    "non_stream": "OK",
+    "stream": "OK"
+  },
+  {
+    "model": "Opus 4.8",
+    "non_stream": "HTTP 404: bad response status code 404 (request id: 2026072320144142220222326231813)",
+    "stream": "HTTP 404: bad response status code 404 (request id: 2026072320144192818444211231198)"
+  },
+  {
+    "model": "Kimi-K2.7-Code",
+    "non_stream": "ERROR: timeout: The read operation timed out",
+    "stream": "ERROR: timeout: The read operation timed out"
+  },
+  {
+    "model": "gpt-5.4",
+    "non_stream": "OK",
+    "stream": "OK"
+  },
+  {
+    "model": "Claude Sonnet 4.6",
+    "non_stream": "HTTP 404: bad response status code 404 (request id: 202607232015473026637892200)",
+    "stream": "HTTP 404: bad response status code 404 (request id: 2026072320154737030670739221040)"
+  },
+  {
+    "model": "Claude Opus 4.6",
+    "non_stream": "HTTP 404: bad response status code 404 (request id: 2026072320154857804703626096069)",
+    "stream": "HTTP 404: bad response status code 404 (request id: 2026072320154893800687143650103)"
+  },
+  {
+    "model": "MiniMax-M3",
+    "non_stream": "OK",
+    "stream": "OK"
+  },
+  {
+    "model": "DeepSeek-V4-Pro",
+    "non_stream": "OK",
+    "stream": "OK"
+  },
+  {
+    "model": "grok-4.5",
+    "non_stream": "OK",
+    "stream": "OK"
+  },
+  {
+    "model": "gpt-5.6-luna",
+    "non_stream": "HTTP 404: bad response status code 404 (request id: 202607232016013695769738551902)",
+    "stream": "HTTP 404: bad response status code 404 (request id: 2026072320160149911669956343146)"
+  },
+  {
+    "model": "gpt-5.6-terra",
+    "non_stream": "OK",
+    "stream": "OK"
+  },
+  {
+    "model": "gpt-5.6-sol",
+    "non_stream": "HTTP 404: bad response status code 404 (request id: 2026072320160643825259877184801)",
+    "stream": "HTTP 404: bad response status code 404 (request id: 2026072320160690059214978899479)"
+  },
+  {
+    "model": "Claude Haiku 4.5",
+    "non_stream": "HTTP 404: bad response status code 404 (request id: 2026072320160759979381077282703)",
+    "stream": "HTTP 404: bad response status code 404 (request id: 2026072320160794500535692905365)"
+  },
+  {
+    "model": "Fable 5",
+    "non_stream": "HTTP 404: Unknown endpoint: POST /v1/chat/completions (request id: 2026072320160861996867064859518)",
+    "stream": "HTTP 404: Unknown endpoint: POST /v1/chat/completions (request id: 2026072320160910394364055573467)"
+  },
+  {
+    "model": "GLM-5.2",
+    "non_stream": "OK",
+    "stream": "OK"
+  },
+  {
+    "model": "GLM-5",
+    "non_stream": "HTTP 404: bad response status code 404 (request id: 2026072320161375732543443523582)",
+    "stream": "HTTP 404: bad response status code 404 (request id: 2026072320161435180091451058058)"
+  },
+  {
+    "model": "GLM-5.1",
+    "non_stream": "OK",
+    "stream": "OK"
+  },
+  {
+    "model": "GLM-5-Turbo",
+    "non_stream": "OK",
+    "stream": "OK"
+  },
+  {
+    "model": "Claude Opus 4.7",
+    "non_stream": "HTTP 404: bad response status code 404 (request id: 2026072320162882397570489408812)",
+    "stream": "HTTP 404: bad response status code 404 (request id: 2026072320162945600744532116308)"
+  },
+  {
+    "model": "Kimi-K2.6",
+    "non_stream": "HTTP 400: invalid temperature: only 1 is allowed for this model (request id: 2026072320163023167296180847237)",
+    "stream": "HTTP 400: invalid temperature: only 1 is allowed for this model (request id: 2026072320163058396143818477183)"
+  },
+  {
+    "model": "DeepSeek-V4-Flash",
+    "non_stream": "OK",
+    "stream": "OK"
+  },
+  {
+    "model": "Claude Sonnet 5",
+    "non_stream": "HTTP 404: bad response status code 404 (request id: 2026072320163393912823872793753)",
+    "stream": "HTTP 404: bad response status code 404 (request id: 2026072320163431330108830011771)"
+  }
+]
