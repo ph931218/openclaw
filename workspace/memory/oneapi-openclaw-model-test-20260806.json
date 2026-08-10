@@ -1,0 +1,457 @@
+{
+  "ts": 1785997183.204396,
+  "baseUrl": "https://oneapi-comate.baidu-int.com/v1",
+  "configured": [
+    "Opus 4.8",
+    "Kimi-K2.7-Code",
+    "gpt-5.4",
+    "Claude Sonnet 4.6",
+    "Claude Opus 4.6",
+    "MiniMax-M3",
+    "DeepSeek-V4-Pro",
+    "grok-4.5",
+    "gpt-5.5",
+    "gpt-5.6-luna",
+    "gpt-5.6-terra",
+    "gpt-5.6-sol",
+    "Claude Haiku 4.5",
+    "Fable 5",
+    "GLM-5.2",
+    "GLM-5",
+    "GLM-5.1",
+    "GLM-5-Turbo",
+    "Claude Opus 4.7",
+    "Kimi-K2.6",
+    "DeepSeek-V4-Flash",
+    "Claude Sonnet 5",
+    "Opus 5"
+  ],
+  "api_models": [
+    "Opus 5",
+    "Claude Haiku 4.5",
+    "Claude Sonnet 4.6",
+    "Claude Sonnet 5",
+    "DeepSeek-V4-Flash",
+    "GLM-5.1",
+    "GLM-5-Turbo",
+    "gpt-5.6-luna",
+    "Claude Opus 4.7",
+    "Kimi-K2.7-Code",
+    "Opus 4.8",
+    "Kimi-K2.6",
+    "DeepSeek-V4-Pro",
+    "GLM-5.2",
+    "gpt-5.5",
+    "gpt-5.6-terra",
+    "gpt-5.6-sol",
+    "MiniMax-M3",
+    "GLM-5",
+    "grok-4.5",
+    "Claude Opus 4.6"
+  ],
+  "results": [
+    {
+      "model": "Claude Haiku 4.5",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 293,
+      "stream_status": 404,
+      "stream_ok": false,
+      "stream_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614192580674900327327768)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}",
+      "tool_ms": 275,
+      "tool_status": 404,
+      "tool_ok": false,
+      "tool_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 202608061419267877674532648584)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}"
+    },
+    {
+      "model": "Claude Opus 4.6",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 410,
+      "stream_status": 404,
+      "stream_ok": false,
+      "stream_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614193861366483993784494)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}",
+      "tool_ms": 330,
+      "tool_status": 404,
+      "tool_ok": false,
+      "tool_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614193898373682060689465)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}"
+    },
+    {
+      "model": "Claude Opus 4.7",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 285,
+      "stream_status": 404,
+      "stream_ok": false,
+      "stream_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614192694066744829451903)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}",
+      "tool_ms": 325,
+      "tool_status": 404,
+      "tool_ok": false,
+      "tool_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614192724644796365657496)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}"
+    },
+    {
+      "model": "Claude Sonnet 4.6",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 608,
+      "stream_status": 404,
+      "stream_ok": false,
+      "stream_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614192580013042954859731)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}",
+      "tool_ms": 542,
+      "tool_status": 404,
+      "tool_ok": false,
+      "tool_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614192639413545502734641)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}"
+    },
+    {
+      "model": "Claude Sonnet 5",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 535,
+      "stream_status": 404,
+      "stream_ok": false,
+      "stream_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 202608061419264498392685336740)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}",
+      "tool_ms": 338,
+      "tool_status": 404,
+      "tool_ok": false,
+      "tool_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614192634284514310561181)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}"
+    },
+    {
+      "model": "DeepSeek-V4-Flash",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 1132,
+      "stream_status": 200,
+      "stream_ok": false,
+      "stream_text": "",
+      "tool_ms": 1306,
+      "tool_status": 200,
+      "tool_ok": true,
+      "tool_calls": [
+        {
+          "id": "call_00_O0mX5EY8RoAHoUp56BJx1813",
+          "type": "function",
+          "function": {
+            "name": "get_time",
+            "arguments": "{\"city\":\"Beijing\"}"
+          }
+        }
+      ]
+    },
+    {
+      "model": "DeepSeek-V4-Pro",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 3568,
+      "stream_status": 200,
+      "stream_ok": false,
+      "stream_text": "",
+      "tool_ms": 2540,
+      "tool_status": 200,
+      "tool_ok": true,
+      "tool_calls": [
+        {
+          "id": "call_00_Xa7tS0Uz8IC6LOaztCLl9837",
+          "type": "function",
+          "function": {
+            "name": "get_time",
+            "arguments": "{\"city\":\"Beijing\"}"
+          }
+        }
+      ]
+    },
+    {
+      "model": "Fable 5",
+      "in_config": true,
+      "in_api": false,
+      "stream_ms": 384,
+      "stream_status": 404,
+      "stream_ok": false,
+      "stream_error": "{\"error\":{\"message\":\"Unknown endpoint: POST /v1/chat/completions (request id: 2026080614193948943590307235373)\",\"type\":\"not_found\",\"param\":\"\",\"code\":null}}",
+      "tool_ms": 761,
+      "tool_status": 404,
+      "tool_ok": false,
+      "tool_error": "{\"error\":{\"message\":\"Unknown endpoint: POST /v1/chat/completions (request id: 2026080614193986880879286762823)\",\"type\":\"not_found\",\"param\":\"\",\"code\":null}}"
+    },
+    {
+      "model": "GLM-5",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 285,
+      "stream_status": 404,
+      "stream_ok": false,
+      "stream_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614193744343048234351521)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}",
+      "tool_ms": 447,
+      "tool_status": 404,
+      "tool_ok": false,
+      "tool_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614193771803631900064874)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}"
+    },
+    {
+      "model": "GLM-5-Turbo",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 325,
+      "stream_status": 404,
+      "stream_ok": false,
+      "stream_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614192666552996809623308)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}",
+      "tool_ms": 305,
+      "tool_status": 404,
+      "tool_ok": false,
+      "tool_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614192697955298266852991)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}"
+    },
+    {
+      "model": "GLM-5.1",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 1315,
+      "stream_status": 200,
+      "stream_ok": false,
+      "stream_text": "",
+      "tool_ms": 3737,
+      "tool_status": 200,
+      "tool_ok": true,
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"city\":\"Beijing\"}",
+            "name": "get_time"
+          },
+          "id": "call_-7373627272844012805",
+          "index": 0,
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "model": "GLM-5.2",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 6071,
+      "stream_status": 200,
+      "stream_ok": true,
+      "stream_text": "OK",
+      "tool_ms": 2649,
+      "tool_status": 200,
+      "tool_ok": false,
+      "tool_calls": [],
+      "tool_text": ""
+    },
+    {
+      "model": "gpt-5.4",
+      "in_config": true,
+      "in_api": false,
+      "stream_ms": 88,
+      "stream_status": 503,
+      "stream_ok": false,
+      "stream_error": "{\"error\":{\"message\":\"当前分组 default 下对于模型 gpt-5.4 无可用渠道 (request id: 2026080614193931483588904385463)\",\"type\":\"one_api_error\"}}",
+      "tool_ms": 89,
+      "tool_status": 503,
+      "tool_ok": false,
+      "tool_error": "{\"error\":{\"message\":\"当前分组 default 下对于模型 gpt-5.4 无可用渠道 (request id: 2026080614193941007702960063387)\",\"type\":\"one_api_error\"}}"
+    },
+    {
+      "model": "gpt-5.5",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 2763,
+      "stream_status": 200,
+      "stream_ok": true,
+      "stream_text": "OK",
+      "tool_ms": 5426,
+      "tool_status": 200,
+      "tool_ok": true,
+      "tool_calls": [
+        {
+          "id": "call_uaH32ERPH58EVioOm0QjZJqg",
+          "type": "function",
+          "function": {
+            "name": "get_time",
+            "arguments": "{\"city\":\"Beijing\"}"
+          }
+        }
+      ]
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 1733,
+      "stream_status": 200,
+      "stream_ok": true,
+      "stream_text": "OK",
+      "tool_ms": 1987,
+      "tool_status": 200,
+      "tool_ok": true,
+      "tool_calls": [
+        {
+          "id": "call_oGrHgcjucaH5VMLTHGjMNtA8",
+          "type": "function",
+          "function": {
+            "name": "get_time",
+            "arguments": "{\"city\":\"Beijing\"}"
+          }
+        }
+      ]
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 6004,
+      "stream_status": 200,
+      "stream_ok": true,
+      "stream_text": "OK",
+      "tool_ms": 4070,
+      "tool_status": 200,
+      "tool_ok": true,
+      "tool_calls": [
+        {
+          "id": "call_K5OFdDEfJyoEKingwlQnHi3d",
+          "type": "function",
+          "function": {
+            "name": "get_time",
+            "arguments": "{\"city\":\"Beijing\"}"
+          }
+        }
+      ]
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 3588,
+      "stream_status": 200,
+      "stream_ok": true,
+      "stream_text": "OK",
+      "tool_ms": 4783,
+      "tool_status": 200,
+      "tool_ok": true,
+      "tool_calls": [
+        {
+          "id": "call_FSFdfDntWztSzhDYm1LN9QzK",
+          "type": "function",
+          "function": {
+            "name": "get_time",
+            "arguments": "{\"city\":\"Beijing\"}"
+          }
+        }
+      ]
+    },
+    {
+      "model": "grok-4.5",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 2721,
+      "stream_status": 200,
+      "stream_ok": true,
+      "stream_text": "OK",
+      "tool_ms": 2512,
+      "tool_status": 200,
+      "tool_ok": true,
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"city\":\"Beijing\"}",
+            "name": "get_time"
+          },
+          "id": "call-7263d5a4-60b3-4551-a069-12dabdcaa1b2-0",
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "model": "Kimi-K2.6",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 1941,
+      "stream_status": 200,
+      "stream_ok": false,
+      "stream_text": "",
+      "tool_ms": 1987,
+      "tool_status": 200,
+      "tool_ok": true,
+      "tool_calls": [
+        {
+          "index": 0,
+          "id": "get_time_0",
+          "type": "function",
+          "function": {
+            "name": "get_time",
+            "arguments": "{\"city\":\"Beijing\"}"
+          }
+        }
+      ]
+    },
+    {
+      "model": "Kimi-K2.7-Code",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 402,
+      "stream_status": 200,
+      "stream_ok": true,
+      "stream_text": "OK",
+      "tool_ms": 689,
+      "tool_status": 200,
+      "tool_ok": true,
+      "tool_calls": [
+        {
+          "id": "functions.get_time:0",
+          "index": 0,
+          "type": "function",
+          "function": {
+            "name": "get_time",
+            "arguments": "{\"city\": \"Beijing\"}"
+          }
+        }
+      ]
+    },
+    {
+      "model": "MiniMax-M3",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 3053,
+      "stream_status": 200,
+      "stream_ok": true,
+      "stream_text": "<think>The user is asking me to reply exactly with \"OK\". I should follow</think>",
+      "tool_ms": 1972,
+      "tool_status": 200,
+      "tool_ok": true,
+      "tool_calls": [
+        {
+          "id": "call_GRqHYgj6aSNC8lMBFicVmB36",
+          "type": "function",
+          "function": {
+            "name": "get_time",
+            "arguments": "{\"city\": \"Beijing\"}"
+          },
+          "index": 0
+        }
+      ]
+    },
+    {
+      "model": "Opus 4.8",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 687,
+      "stream_status": 404,
+      "stream_ok": false,
+      "stream_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614192786823238157790273)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}",
+      "tool_ms": 480,
+      "tool_status": 404,
+      "tool_ok": false,
+      "tool_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614192840903296878082757)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}"
+    },
+    {
+      "model": "Opus 5",
+      "in_config": true,
+      "in_api": true,
+      "stream_ms": 562,
+      "stream_status": 404,
+      "stream_ok": false,
+      "stream_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 202608061419263454385484368574)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}",
+      "tool_ms": 302,
+      "tool_status": 404,
+      "tool_ok": false,
+      "tool_error": "{\"error\":{\"message\":\"bad response status code 404 (request id: 2026080614192634373810738026259)\",\"type\":\"upstream_error\",\"param\":\"404\",\"code\":\"bad_response_status_code\"}}"
+    }
+  ]
+}

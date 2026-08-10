@@ -1,4 +1,4 @@
 {
-  "lastSyncTime": "2026-07-26T14:14:00+08:00",
-  "lastResult": "配置已是最新；API 返回22个模型，本地22个模型；无新增、无缺失"
+  "lastSyncTime": "2026-08-09T14:38:00+08:00",
+  "lastResult": "已同步 OneAPI 模型列表；API 返回21个模型，本地配置12个模型；安全新增9个模型：GLM-5、GLM-5-Turbo、Claude Sonnet 4.6、Claude Sonnet 5、Claude Opus 4.6、Claude Opus 4.7、Opus 4.8、Claude Haiku 4.5、Opus 5。"
 }
